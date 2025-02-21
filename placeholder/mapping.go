@@ -148,7 +148,7 @@ func init() {
 		}
 	}
 
-	for key, _ := range mapping {
+	for key := range mapping {
 		mapping[key]["identity[0].principal_id"] = "00000000-0000-0000-0000-000000000000"
 		mapping[key]["identity[0].tenant_id"] = "00000000-0000-0000-0000-000000000000"
 	}

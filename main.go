@@ -186,7 +186,7 @@ func ExportAzurePayload(tfplan *tfjson.Plan) []types.RequestModel {
 			out = append(out, model)
 			continue
 		} else {
-			for index, _ := range models {
+			for index := range models {
 				models[index].Address = change.Address
 			}
 			out = append(out, models...)
