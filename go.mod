@@ -41,8 +41,8 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-azure-helpers v0.71.0 // indirect
-	github.com/hashicorp/go-azure-sdk/resource-manager v0.20241206.1180327 // indirect
-	github.com/hashicorp/go-azure-sdk/sdk v0.20241206.1180327 // indirect
+	github.com/hashicorp/go-azure-sdk/resource-manager v0.20250213.1092825 // indirect
+	github.com/hashicorp/go-azure-sdk/sdk v0.20250213.1092825 // indirect
 	github.com/hashicorp/go-checkpoint v0.5.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-cty v1.4.1-0.20200414143053-d3edf31b6320 // indirect
@@ -63,6 +63,7 @@ require (
 	github.com/hashicorp/terraform-registry-address v0.2.4 // indirect
 	github.com/hashicorp/terraform-svchost v0.1.1 // indirect
 	github.com/hashicorp/yamux v0.1.1 // indirect
+	github.com/jackofallops/giovanni v0.28.0 // indirect
 	github.com/jackofallops/kermit v0.20241010.1180132 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -76,7 +77,6 @@ require (
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/rickb777/date v1.12.5-0.20200422084442-6300e543c4d9 // indirect
 	github.com/rickb777/plural v1.4.1 // indirect
-	github.com/tombuildsstuff/giovanni v0.27.0 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect

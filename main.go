@@ -35,9 +35,7 @@ Usage: aztfpreflight [options]
 Options:
 	-i <file>   file path to terraform plan file
 	-v          enable verbose logging
-	-h          show help
-
-`
+	-h          show help`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
