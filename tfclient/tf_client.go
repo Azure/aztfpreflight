@@ -104,7 +104,8 @@ func (client *TerraformClient) ApplyResource(resourceType string, input interfac
 		return err
 	}
 
-	ctx, _ := context.WithTimeout(context.TODO(), time.Second*5)
+	ctx, cancel := context.WithTimeout(context.TODO(), time.Second*5)
+	defer cancel()
 
 	// disable logging for the provider
 	log.SetOutput(io.Discard)
