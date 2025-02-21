@@ -1,0 +1,6 @@
+[submodule "submodules/terraform-provider-azurerm"]
+	path = submodules/terraform-provider-azurerm
+	url = git@github.com:ms-henglu/terraform-provider-azurerm.git
+[submodule "submodules/go-azure-sdk"]
+	path = submodules/go-azure-sdk
+	url = git@github.com:ms-henglu/go-azure-sdk.git

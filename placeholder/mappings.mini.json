@@ -1,0 +1,4130 @@
+[
+  {
+    "resourceType": "azurerm_aadb2c_directory",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureActiveDirectory/b2cDirectories"
+  },
+  {
+    "resourceType": "azurerm_active_directory_domain_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AAD/domainServices/initialReplicaSetId"
+  },
+  {
+    "resourceType": "azurerm_active_directory_domain_service_replica_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AAD/domainServices/replicaSets"
+  },
+  {
+    "resourceType": "azurerm_active_directory_domain_service_trust",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AAD/domainServices/trusts"
+  },
+  {
+    "resourceType": "azurerm_advanced_threat_protection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/providers/Microsoft.Security/advancedThreatProtectionSettings"
+  },
+  {
+    "resourceType": "azurerm_advisor_suppression",
+    "idPattern": "/subscriptions/providers/Microsoft.Advisor/recommendations/suppressions"
+  },
+  {
+    "resourceType": "azurerm_ai_services",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CognitiveServices/accounts"
+  },
+  {
+    "resourceType": "azurerm_analysis_services_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AnalysisServices/servers"
+  },
+  {
+    "resourceType": "azurerm_api_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/connections"
+  },
+  {
+    "resourceType": "azurerm_api_management",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service"
+  },
+  {
+    "resourceType": "azurerm_api_management_api",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_diagnostic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/diagnostics"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_operation",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/operations"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_operation_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/operations"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_operation_tag",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/operations/tags"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_release",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/releases"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_schema",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/schemas"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_tag",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/tags"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_tag_description",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apis/tagDescriptions"
+  },
+  {
+    "resourceType": "azurerm_api_management_api_version_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/apiVersionSets"
+  },
+  {
+    "resourceType": "azurerm_api_management_authorization_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/authorizationServers"
+  },
+  {
+    "resourceType": "azurerm_api_management_backend",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/backends"
+  },
+  {
+    "resourceType": "azurerm_api_management_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/certificates"
+  },
+  {
+    "resourceType": "azurerm_api_management_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/customDomains"
+  },
+  {
+    "resourceType": "azurerm_api_management_diagnostic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/diagnostics"
+  },
+  {
+    "resourceType": "azurerm_api_management_email_template",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/templates"
+  },
+  {
+    "resourceType": "azurerm_api_management_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/gateways"
+  },
+  {
+    "resourceType": "azurerm_api_management_gateway_api",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/gateways/apis"
+  },
+  {
+    "resourceType": "azurerm_api_management_gateway_certificate_authority",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/gateways/certificateAuthorities"
+  },
+  {
+    "resourceType": "azurerm_api_management_gateway_host_name_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/gateways/hostnameConfigurations"
+  },
+  {
+    "resourceType": "azurerm_api_management_global_schema",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/schemas"
+  },
+  {
+    "resourceType": "azurerm_api_management_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/groups"
+  },
+  {
+    "resourceType": "azurerm_api_management_group_user",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/groups/users"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_aad",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_aadb2c",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_facebook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_google",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_microsoft",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_identity_provider_twitter",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/identityProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_logger",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/loggers"
+  },
+  {
+    "resourceType": "azurerm_api_management_named_value",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/namedValues"
+  },
+  {
+    "resourceType": "azurerm_api_management_notification_recipient_email",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/notifications/recipientEmails"
+  },
+  {
+    "resourceType": "azurerm_api_management_notification_recipient_user",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/notifications/recipientUsers"
+  },
+  {
+    "resourceType": "azurerm_api_management_openid_connect_provider",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/openidConnectProviders"
+  },
+  {
+    "resourceType": "azurerm_api_management_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service"
+  },
+  {
+    "resourceType": "azurerm_api_management_product",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/products"
+  },
+  {
+    "resourceType": "azurerm_api_management_product_api",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/products/apis"
+  },
+  {
+    "resourceType": "azurerm_api_management_product_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/products/groups"
+  },
+  {
+    "resourceType": "azurerm_api_management_product_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/products"
+  },
+  {
+    "resourceType": "azurerm_api_management_product_tag",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/products/tags"
+  },
+  {
+    "resourceType": "azurerm_api_management_redis_cache",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/caches"
+  },
+  {
+    "resourceType": "azurerm_api_management_subscription",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/subscriptions"
+  },
+  {
+    "resourceType": "azurerm_api_management_tag",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/tags"
+  },
+  {
+    "resourceType": "azurerm_api_management_user",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ApiManagement/service/users"
+  },
+  {
+    "resourceType": "azurerm_app_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppConfiguration/configurationStores"
+  },
+  {
+    "resourceType": "azurerm_app_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_app_service_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/certificates"
+  },
+  {
+    "resourceType": "azurerm_app_service_certificate_binding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/hostNameBindings"
+  },
+  {
+    "resourceType": "azurerm_app_service_certificate_order",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CertificateRegistration/certificateOrders"
+  },
+  {
+    "resourceType": "azurerm_app_service_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/providers/Microsoft.ServiceLinker/linkers"
+  },
+  {
+    "resourceType": "azurerm_app_service_custom_hostname_binding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/hostNameBindings"
+  },
+  {
+    "resourceType": "azurerm_app_service_environment_v3",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/hostingEnvironments"
+  },
+  {
+    "resourceType": "azurerm_app_service_hybrid_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/hybridConnectionNamespaces/relays"
+  },
+  {
+    "resourceType": "azurerm_app_service_managed_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/certificates"
+  },
+  {
+    "resourceType": "azurerm_app_service_plan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/serverFarms"
+  },
+  {
+    "resourceType": "azurerm_app_service_public_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/publicCertificates"
+  },
+  {
+    "resourceType": "azurerm_app_service_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_app_service_slot_custom_hostname_binding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots/hostNameBindings"
+  },
+  {
+    "resourceType": "azurerm_app_service_slot_virtual_network_swift_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots/config"
+  },
+  {
+    "resourceType": "azurerm_app_service_source_control",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_app_service_source_control_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_app_service_virtual_network_swift_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/config"
+  },
+  {
+    "resourceType": "azurerm_application_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/applicationGateways"
+  },
+  {
+    "resourceType": "azurerm_application_insights",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/components"
+  },
+  {
+    "resourceType": "azurerm_application_insights_analytics_item",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/components/analyticsItems"
+  },
+  {
+    "resourceType": "azurerm_application_insights_api_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/components/apiKeys"
+  },
+  {
+    "resourceType": "azurerm_application_insights_smart_detection_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/components/proactiveDetectionConfigs"
+  },
+  {
+    "resourceType": "azurerm_application_insights_standard_web_test",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/webTests"
+  },
+  {
+    "resourceType": "azurerm_application_insights_web_test",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/webTests"
+  },
+  {
+    "resourceType": "azurerm_application_insights_workbook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/workbooks"
+  },
+  {
+    "resourceType": "azurerm_application_insights_workbook_template",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/workbookTemplates"
+  },
+  {
+    "resourceType": "azurerm_application_load_balancer",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceNetworking/trafficControllers"
+  },
+  {
+    "resourceType": "azurerm_application_load_balancer_frontend",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceNetworking/trafficControllers/frontends"
+  },
+  {
+    "resourceType": "azurerm_application_load_balancer_subnet_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceNetworking/trafficControllers/associations"
+  },
+  {
+    "resourceType": "azurerm_application_security_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/applicationSecurityGroups"
+  },
+  {
+    "resourceType": "azurerm_arc_kubernetes_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kubernetes/connectedClusters"
+  },
+  {
+    "resourceType": "azurerm_arc_kubernetes_cluster_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kubernetes/connectedClusters/providers/Microsoft.KubernetesConfiguration/extensions"
+  },
+  {
+    "resourceType": "azurerm_arc_kubernetes_flux_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kubernetes/connectedClusters/providers/Microsoft.KubernetesConfiguration/fluxConfigurations"
+  },
+  {
+    "resourceType": "azurerm_arc_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HybridCompute/machines"
+  },
+  {
+    "resourceType": "azurerm_arc_machine_automanage_configuration_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HybridCompute/machines/providers/Microsoft.AutoManage/configurationProfileAssignments"
+  },
+  {
+    "resourceType": "azurerm_arc_machine_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HybridCompute/machines/extensions"
+  },
+  {
+    "resourceType": "azurerm_arc_private_link_scope",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HybridCompute/privateLinkScopes"
+  },
+  {
+    "resourceType": "azurerm_arc_resource_bridge_appliance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ResourceConnector/appliances"
+  },
+  {
+    "resourceType": "azurerm_attestation_provider",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Attestation/attestationProviders"
+  },
+  {
+    "resourceType": "azurerm_automanage_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AutoManage/configurationProfiles"
+  },
+  {
+    "resourceType": "azurerm_automation_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts"
+  },
+  {
+    "resourceType": "azurerm_automation_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/certificates"
+  },
+  {
+    "resourceType": "azurerm_automation_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/connections"
+  },
+  {
+    "resourceType": "azurerm_automation_connection_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/connections"
+  },
+  {
+    "resourceType": "azurerm_automation_connection_classic_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/connections"
+  },
+  {
+    "resourceType": "azurerm_automation_connection_service_principal",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/connections"
+  },
+  {
+    "resourceType": "azurerm_automation_connection_type",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/connectionTypes"
+  },
+  {
+    "resourceType": "azurerm_automation_credential",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/credentials"
+  },
+  {
+    "resourceType": "azurerm_automation_dsc_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/configurations"
+  },
+  {
+    "resourceType": "azurerm_automation_dsc_nodeconfiguration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/nodeConfigurations"
+  },
+  {
+    "resourceType": "azurerm_automation_hybrid_runbook_worker",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups/hybridRunbookWorkers"
+  },
+  {
+    "resourceType": "azurerm_automation_hybrid_runbook_worker_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups"
+  },
+  {
+    "resourceType": "azurerm_automation_job_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/schedules"
+  },
+  {
+    "resourceType": "azurerm_automation_module",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/modules"
+  },
+  {
+    "resourceType": "azurerm_automation_powershell72_module",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/powerShell72Modules"
+  },
+  {
+    "resourceType": "azurerm_automation_python3_package",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/python3Packages"
+  },
+  {
+    "resourceType": "azurerm_automation_runbook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/runbooks"
+  },
+  {
+    "resourceType": "azurerm_automation_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/schedules"
+  },
+  {
+    "resourceType": "azurerm_automation_software_update_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/softwareUpdateConfigurations"
+  },
+  {
+    "resourceType": "azurerm_automation_source_control",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/sourceControls"
+  },
+  {
+    "resourceType": "azurerm_automation_variable_bool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/variables"
+  },
+  {
+    "resourceType": "azurerm_automation_variable_datetime",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/variables"
+  },
+  {
+    "resourceType": "azurerm_automation_variable_int",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/variables"
+  },
+  {
+    "resourceType": "azurerm_automation_variable_object",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/variables"
+  },
+  {
+    "resourceType": "azurerm_automation_variable_string",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/variables"
+  },
+  {
+    "resourceType": "azurerm_automation_watcher",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/watchers"
+  },
+  {
+    "resourceType": "azurerm_automation_webhook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Automation/automationAccounts/webHooks"
+  },
+  {
+    "resourceType": "azurerm_availability_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/availabilitySets"
+  },
+  {
+    "resourceType": "azurerm_backup_container_storage_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers"
+  },
+  {
+    "resourceType": "azurerm_backup_policy_file_share",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_backup_policy_vm",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_backup_policy_vm_workload",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_backup_protected_file_share",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems"
+  },
+  {
+    "resourceType": "azurerm_backup_protected_vm",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems"
+  },
+  {
+    "resourceType": "azurerm_bastion_host",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/bastionHosts"
+  },
+  {
+    "resourceType": "azurerm_batch_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Batch/batchAccounts"
+  },
+  {
+    "resourceType": "azurerm_batch_application",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Batch/batchAccounts/applications"
+  },
+  {
+    "resourceType": "azurerm_batch_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Batch/batchAccounts/certificates"
+  },
+  {
+    "resourceType": "azurerm_batch_job",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Batch/batchAccounts/pools/jobs"
+  },
+  {
+    "resourceType": "azurerm_batch_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Batch/batchAccounts/pools"
+  },
+  {
+    "resourceType": "azurerm_billing_account_cost_management_export",
+    "idPattern": "/providers/Microsoft.Billing/billingAccounts/providers/Microsoft.CostManagement/exports"
+  },
+  {
+    "resourceType": "azurerm_blueprint_assignment",
+    "idPattern": "/subscriptions/providers/Microsoft.Blueprint/blueprintAssignments"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_alexa",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_direct_line_speech",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_directline",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_email",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_facebook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_line",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_ms_teams",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_slack",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_sms",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channel_web_chat",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/channels"
+  },
+  {
+    "resourceType": "azurerm_bot_channels_registration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices"
+  },
+  {
+    "resourceType": "azurerm_bot_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices/connections"
+  },
+  {
+    "resourceType": "azurerm_bot_service_azure_bot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices"
+  },
+  {
+    "resourceType": "azurerm_bot_web_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.BotService/botServices"
+  },
+  {
+    "resourceType": "azurerm_capacity_reservation",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/capacityReservationGroups/capacityReservations"
+  },
+  {
+    "resourceType": "azurerm_capacity_reservation_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/capacityReservationGroups"
+  },
+  {
+    "resourceType": "azurerm_cdn_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/endpoints"
+  },
+  {
+    "resourceType": "azurerm_cdn_endpoint_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/endpoints/customDomains"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/customDomains"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_custom_domain_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/associations"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/afdEndpoints"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_firewall_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/frontDoorWebApplicationFirewallPolicies"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_origin",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/originGroups/origins"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_origin_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/originGroups"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_profile",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_route",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/afdEndpoints/routes"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/ruleSets/rules"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_rule_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/ruleSets"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_secret",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/secrets"
+  },
+  {
+    "resourceType": "azurerm_cdn_frontdoor_security_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles/securityPolicies"
+  },
+  {
+    "resourceType": "azurerm_cdn_profile",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cdn/profiles"
+  },
+  {
+    "resourceType": "azurerm_chaos_studio_capability",
+    "idPattern": "/{scope}/Microsoft.Chaos/{targetName}"
+  },
+  {
+    "resourceType": "azurerm_chaos_studio_experiment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Chaos/experiments"
+  },
+  {
+    "resourceType": "azurerm_chaos_studio_target",
+    "idPattern": "/{scope}/Microsoft.Chaos"
+  },
+  {
+    "resourceType": "azurerm_cognitive_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CognitiveServices/accounts"
+  },
+  {
+    "resourceType": "azurerm_cognitive_account_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CognitiveServices/accounts"
+  },
+  {
+    "resourceType": "azurerm_cognitive_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CognitiveServices/accounts/deployments"
+  },
+  {
+    "resourceType": "azurerm_cognitive_rai_blocklist",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CognitiveServices/accounts/raiBlocklists"
+  },
+  {
+    "resourceType": "azurerm_communication_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Communication/communicationServices"
+  },
+  {
+    "resourceType": "azurerm_communication_service_email_domain_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Communication/communicationServices"
+  },
+  {
+    "resourceType": "azurerm_confidential_ledger",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ConfidentialLedger/ledgers"
+  },
+  {
+    "resourceType": "azurerm_consumption_budget_management_group",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Consumption/budgets"
+  },
+  {
+    "resourceType": "azurerm_consumption_budget_resource_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Consumption/budgets"
+  },
+  {
+    "resourceType": "azurerm_consumption_budget_subscription",
+    "idPattern": "/subscriptions/providers/Microsoft.Consumption/budgets"
+  },
+  {
+    "resourceType": "azurerm_container_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/containerApps"
+  },
+  {
+    "resourceType": "azurerm_container_app_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/containerApps/customDomainName"
+  },
+  {
+    "resourceType": "azurerm_container_app_environment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/managedEnvironments"
+  },
+  {
+    "resourceType": "azurerm_container_app_environment_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/managedEnvironments/certificates"
+  },
+  {
+    "resourceType": "azurerm_container_app_environment_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/managedEnvironments"
+  },
+  {
+    "resourceType": "azurerm_container_app_environment_dapr_component",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/managedEnvironments/daprComponents"
+  },
+  {
+    "resourceType": "azurerm_container_app_environment_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/managedEnvironments/storages"
+  },
+  {
+    "resourceType": "azurerm_container_app_job",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.App/jobs"
+  },
+  {
+    "resourceType": "azurerm_container_connected_registry",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/connectedRegistries"
+  },
+  {
+    "resourceType": "azurerm_container_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerInstance/containerGroups"
+  },
+  {
+    "resourceType": "azurerm_container_registry",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries"
+  },
+  {
+    "resourceType": "azurerm_container_registry_agent_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/agentPools"
+  },
+  {
+    "resourceType": "azurerm_container_registry_cache_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/cacheRules"
+  },
+  {
+    "resourceType": "azurerm_container_registry_scope_map",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/scopeMaps"
+  },
+  {
+    "resourceType": "azurerm_container_registry_task",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/tasks"
+  },
+  {
+    "resourceType": "azurerm_container_registry_token",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/tokens"
+  },
+  {
+    "resourceType": "azurerm_container_registry_token_password",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/tokens/passwords"
+  },
+  {
+    "resourceType": "azurerm_container_registry_webhook",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerRegistry/registries/webHooks"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_cassandra_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/cassandraClusters"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_cassandra_datacenter",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/cassandraClusters/dataCenters"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_cassandra_keyspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/cassandraKeyspaces"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_cassandra_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/cassandraKeyspaces/tables"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_gremlin_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/gremlinDatabases"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_gremlin_graph",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/gremlinDatabases/graphs"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_mongo_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_mongo_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/mongodbDatabases"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_mongo_role_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/mongodbRoleDefinitions"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_mongo_user_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/mongodbUserDefinitions"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_postgresql_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/serverGroupsv2"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_postgresql_coordinator_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/coordinatorConfigurations"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_postgresql_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_postgresql_node_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/nodeConfigurations"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_postgresql_role",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/roles"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_container",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_dedicated_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/services"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_function",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_role_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_role_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlRoleDefinitions"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_stored_procedure",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/storedProcedures"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_sql_trigger",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers"
+  },
+  {
+    "resourceType": "azurerm_cosmosdb_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/databaseAccounts/tables"
+  },
+  {
+    "resourceType": "azurerm_cost_anomaly_alert",
+    "idPattern": "/subscriptions/providers/Microsoft.CostManagement/scheduledActions"
+  },
+  {
+    "resourceType": "azurerm_cost_management_scheduled_action",
+    "idPattern": "/subscriptions/providers/Microsoft.CostManagement/scheduledActions"
+  },
+  {
+    "resourceType": "azurerm_custom_ip_prefix",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/customIPPrefixes"
+  },
+  {
+    "resourceType": "azurerm_custom_provider",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CustomProviders/resourceProviders"
+  },
+  {
+    "resourceType": "azurerm_dashboard_grafana",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Dashboard/grafana"
+  },
+  {
+    "resourceType": "azurerm_dashboard_grafana_managed_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Dashboard/grafana/managedPrivateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_data_factory",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories"
+  },
+  {
+    "resourceType": "azurerm_data_factory_credential_service_principal",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/credentials"
+  },
+  {
+    "resourceType": "azurerm_data_factory_credential_user_managed_identity",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/credentials"
+  },
+  {
+    "resourceType": "azurerm_data_factory_custom_dataset",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_data_flow",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/dataflows"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_azure_blob",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_azure_sql_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_binary",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_cosmosdb_sqlapi",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_delimited_text",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_http",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_json",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_mysql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_parquet",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_postgresql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_snowflake",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_dataset_sql_server_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/datasets"
+  },
+  {
+    "resourceType": "azurerm_data_factory_flowlet_data_flow",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/dataflows"
+  },
+  {
+    "resourceType": "azurerm_data_factory_integration_runtime_azure",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/integrationruntimes"
+  },
+  {
+    "resourceType": "azurerm_data_factory_integration_runtime_azure_ssis",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/integrationruntimes"
+  },
+  {
+    "resourceType": "azurerm_data_factory_integration_runtime_self_hosted",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/integrationruntimes"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_custom_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_blob_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_databricks",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_file_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_function",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_search",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_sql_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_table_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_cosmosdb",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_cosmosdb_mongoapi",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_data_lake_storage_gen2",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_key_vault",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_kusto",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_mysql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_odata",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_odbc",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_postgresql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_sftp",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_snowflake",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_sql_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_synapse",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_web",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/linkedservices"
+  },
+  {
+    "resourceType": "azurerm_data_factory_managed_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_data_factory_pipeline",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/pipelines"
+  },
+  {
+    "resourceType": "azurerm_data_factory_trigger_blob_event",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/triggers"
+  },
+  {
+    "resourceType": "azurerm_data_factory_trigger_custom_event",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/triggers"
+  },
+  {
+    "resourceType": "azurerm_data_factory_trigger_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/triggers"
+  },
+  {
+    "resourceType": "azurerm_data_factory_trigger_tumbling_window",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataFactory/factories/triggers"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_blob_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_disk",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_kubernetes_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_mysql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_postgresql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_instance_postgresql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupInstances"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_blob_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_disk",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_kubernetes_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_mysql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_postgresql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_policy_postgresql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_data_protection_backup_vault",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/backupVaults"
+  },
+  {
+    "resourceType": "azurerm_data_protection_resource_guard",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataProtection/resourceGuards"
+  },
+  {
+    "resourceType": "azurerm_data_share",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts/shares"
+  },
+  {
+    "resourceType": "azurerm_data_share_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts"
+  },
+  {
+    "resourceType": "azurerm_data_share_dataset_blob_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts/shares/dataSets"
+  },
+  {
+    "resourceType": "azurerm_data_share_dataset_data_lake_gen2",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts/shares/dataSets"
+  },
+  {
+    "resourceType": "azurerm_data_share_dataset_kusto_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts/shares/dataSets"
+  },
+  {
+    "resourceType": "azurerm_data_share_dataset_kusto_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataShare/accounts/shares/dataSets"
+  },
+  {
+    "resourceType": "azurerm_database_migration_project",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataMigration/services/projects"
+  },
+  {
+    "resourceType": "azurerm_database_migration_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataMigration/services"
+  },
+  {
+    "resourceType": "azurerm_databox_edge_device",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DataBoxEdge/dataBoxEdgeDevices"
+  },
+  {
+    "resourceType": "azurerm_databricks_access_connector",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Databricks/accessConnectors"
+  },
+  {
+    "resourceType": "azurerm_databricks_virtual_network_peering",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Databricks/workspaces/virtualNetworkPeerings"
+  },
+  {
+    "resourceType": "azurerm_databricks_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Databricks/workspaces"
+  },
+  {
+    "resourceType": "azurerm_databricks_workspace_root_dbfs_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Databricks/workspaces"
+  },
+  {
+    "resourceType": "azurerm_datadog_monitor",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Datadog/monitors"
+  },
+  {
+    "resourceType": "azurerm_dedicated_hardware_security_module",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HardwareSecurityModules/dedicatedHSMs"
+  },
+  {
+    "resourceType": "azurerm_dedicated_host",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/hostGroups/hosts"
+  },
+  {
+    "resourceType": "azurerm_dedicated_host_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/hostGroups"
+  },
+  {
+    "resourceType": "azurerm_dev_center",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters"
+  },
+  {
+    "resourceType": "azurerm_dev_center_attached_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters/attachedNetworks"
+  },
+  {
+    "resourceType": "azurerm_dev_center_catalog",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters/catalogs"
+  },
+  {
+    "resourceType": "azurerm_dev_center_dev_box_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters/devBoxDefinitions"
+  },
+  {
+    "resourceType": "azurerm_dev_center_environment_type",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters/environmentTypes"
+  },
+  {
+    "resourceType": "azurerm_dev_center_gallery",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/devCenters/galleries"
+  },
+  {
+    "resourceType": "azurerm_dev_center_network_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/networkConnections"
+  },
+  {
+    "resourceType": "azurerm_dev_center_project",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/projects"
+  },
+  {
+    "resourceType": "azurerm_dev_center_project_environment_type",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/projects/environmentTypes"
+  },
+  {
+    "resourceType": "azurerm_dev_center_project_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevCenter/projects/pools"
+  },
+  {
+    "resourceType": "azurerm_dev_test_global_vm_shutdown_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/schedules"
+  },
+  {
+    "resourceType": "azurerm_dev_test_lab",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs"
+  },
+  {
+    "resourceType": "azurerm_dev_test_linux_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs/virtualMachines"
+  },
+  {
+    "resourceType": "azurerm_dev_test_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs/policySets/policies"
+  },
+  {
+    "resourceType": "azurerm_dev_test_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs/schedules"
+  },
+  {
+    "resourceType": "azurerm_dev_test_virtual_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs/virtualNetworks"
+  },
+  {
+    "resourceType": "azurerm_dev_test_windows_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DevTestLab/labs/virtualMachines"
+  },
+  {
+    "resourceType": "azurerm_digital_twins_endpoint_eventgrid",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DigitalTwins/digitalTwinsInstances/endpoints"
+  },
+  {
+    "resourceType": "azurerm_digital_twins_endpoint_eventhub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DigitalTwins/digitalTwinsInstances/endpoints"
+  },
+  {
+    "resourceType": "azurerm_digital_twins_endpoint_servicebus",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DigitalTwins/digitalTwinsInstances/endpoints"
+  },
+  {
+    "resourceType": "azurerm_digital_twins_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DigitalTwins/digitalTwinsInstances"
+  },
+  {
+    "resourceType": "azurerm_digital_twins_time_series_database_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DigitalTwins/digitalTwinsInstances/timeSeriesDatabaseConnections"
+  },
+  {
+    "resourceType": "azurerm_disk_access",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/diskAccesses"
+  },
+  {
+    "resourceType": "azurerm_disk_encryption_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/diskEncryptionSets"
+  },
+  {
+    "resourceType": "azurerm_dns_a_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/A"
+  },
+  {
+    "resourceType": "azurerm_dns_aaaa_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/AAAA"
+  },
+  {
+    "resourceType": "azurerm_dns_caa_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/CAA"
+  },
+  {
+    "resourceType": "azurerm_dns_cname_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/CNAME"
+  },
+  {
+    "resourceType": "azurerm_dns_mx_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/MX"
+  },
+  {
+    "resourceType": "azurerm_dns_ns_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/NS"
+  },
+  {
+    "resourceType": "azurerm_dns_ptr_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/PTR"
+  },
+  {
+    "resourceType": "azurerm_dns_srv_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/SRV"
+  },
+  {
+    "resourceType": "azurerm_dns_txt_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones/TXT"
+  },
+  {
+    "resourceType": "azurerm_dns_zone",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsZones"
+  },
+  {
+    "resourceType": "azurerm_dynatrace_monitor",
+    "idPattern": "/subscriptions/resourceGroups/providers/Dynatrace.Observability/monitors"
+  },
+  {
+    "resourceType": "azurerm_elastic_cloud_elasticsearch",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Elastic/monitors"
+  },
+  {
+    "resourceType": "azurerm_elastic_san",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ElasticSan/elasticSans"
+  },
+  {
+    "resourceType": "azurerm_elastic_san_volume",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ElasticSan/elasticSans/volumeGroups/volumes"
+  },
+  {
+    "resourceType": "azurerm_elastic_san_volume_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ElasticSan/elasticSans/volumeGroups"
+  },
+  {
+    "resourceType": "azurerm_email_communication_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Communication/emailServices"
+  },
+  {
+    "resourceType": "azurerm_email_communication_service_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Communication/emailServices/domains"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/domains"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_domain_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/domains/topics"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_event_subscription",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/topics/providers/Microsoft.EventGrid/eventSubscriptions"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_namespace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/namespaces"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_system_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/systemTopics"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_system_topic_event_subscription",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/systemTopics/eventSubscriptions"
+  },
+  {
+    "resourceType": "azurerm_eventgrid_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventGrid/topics"
+  },
+  {
+    "resourceType": "azurerm_eventhub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/eventhubs"
+  },
+  {
+    "resourceType": "azurerm_eventhub_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/eventhubs/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_eventhub_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/clusters"
+  },
+  {
+    "resourceType": "azurerm_eventhub_consumer_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/eventhubs/consumerGroups"
+  },
+  {
+    "resourceType": "azurerm_eventhub_namespace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces"
+  },
+  {
+    "resourceType": "azurerm_eventhub_namespace_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_eventhub_namespace_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces"
+  },
+  {
+    "resourceType": "azurerm_eventhub_namespace_disaster_recovery_config",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/disasterRecoveryConfigs"
+  },
+  {
+    "resourceType": "azurerm_eventhub_namespace_schema_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.EventHub/namespaces/schemaGroups"
+  },
+  {
+    "resourceType": "azurerm_express_route_circuit",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteCircuits"
+  },
+  {
+    "resourceType": "azurerm_express_route_circuit_authorization",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteCircuits/authorizations"
+  },
+  {
+    "resourceType": "azurerm_express_route_circuit_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteCircuits/peerings/connections"
+  },
+  {
+    "resourceType": "azurerm_express_route_circuit_peering",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteCircuits/peerings"
+  },
+  {
+    "resourceType": "azurerm_express_route_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteGateways/expressRouteConnections"
+  },
+  {
+    "resourceType": "azurerm_express_route_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRouteGateways"
+  },
+  {
+    "resourceType": "azurerm_express_route_port",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRoutePorts"
+  },
+  {
+    "resourceType": "azurerm_express_route_port_authorization",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/expressRoutePorts/authorizations"
+  },
+  {
+    "resourceType": "azurerm_extended_location_custom_location",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ExtendedLocation/customLocations"
+  },
+  {
+    "resourceType": "azurerm_fabric_capacity",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Fabric/capacities"
+  },
+  {
+    "resourceType": "azurerm_federated_identity_credential",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials"
+  },
+  {
+    "resourceType": "azurerm_firewall",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/azureFirewalls"
+  },
+  {
+    "resourceType": "azurerm_firewall_application_rule_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/azureFirewalls/applicationRuleCollections"
+  },
+  {
+    "resourceType": "azurerm_firewall_nat_rule_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/azureFirewalls/natRuleCollections"
+  },
+  {
+    "resourceType": "azurerm_firewall_network_rule_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/azureFirewalls/networkRuleCollections"
+  },
+  {
+    "resourceType": "azurerm_firewall_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/firewallPolicies"
+  },
+  {
+    "resourceType": "azurerm_firewall_policy_rule_collection_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/firewallPolicies/ruleCollectionGroups"
+  },
+  {
+    "resourceType": "azurerm_fluid_relay_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.FluidRelay/fluidRelayServers"
+  },
+  {
+    "resourceType": "azurerm_frontdoor",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/frontDoors"
+  },
+  {
+    "resourceType": "azurerm_frontdoor_custom_https_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/frontDoors/customHttpsConfiguration"
+  },
+  {
+    "resourceType": "azurerm_frontdoor_firewall_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/frontDoorWebApplicationFirewallPolicies"
+  },
+  {
+    "resourceType": "azurerm_frontdoor_rules_engine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/frontdoors/rulesEngines"
+  },
+  {
+    "resourceType": "azurerm_function_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_function_app_active_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_function_app_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/providers/Microsoft.ServiceLinker/linkers"
+  },
+  {
+    "resourceType": "azurerm_function_app_function",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/functions"
+  },
+  {
+    "resourceType": "azurerm_function_app_hybrid_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/hybridConnectionNamespaces/relays"
+  },
+  {
+    "resourceType": "azurerm_function_app_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_gallery_application",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/galleries/applications"
+  },
+  {
+    "resourceType": "azurerm_gallery_application_version",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/galleries/applications/versions"
+  },
+  {
+    "resourceType": "azurerm_graph_services_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.GraphServices/accounts"
+  },
+  {
+    "resourceType": "azurerm_hdinsight_hadoop_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HDInsight/clusters"
+  },
+  {
+    "resourceType": "azurerm_hdinsight_hbase_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HDInsight/clusters"
+  },
+  {
+    "resourceType": "azurerm_hdinsight_interactive_query_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HDInsight/clusters"
+  },
+  {
+    "resourceType": "azurerm_hdinsight_kafka_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HDInsight/clusters"
+  },
+  {
+    "resourceType": "azurerm_hdinsight_spark_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HDInsight/clusters"
+  },
+  {
+    "resourceType": "azurerm_healthbot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthBot/healthBots"
+  },
+  {
+    "resourceType": "azurerm_healthcare_dicom_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/workspaces/dicomServices"
+  },
+  {
+    "resourceType": "azurerm_healthcare_fhir_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/workspaces/fhirServices"
+  },
+  {
+    "resourceType": "azurerm_healthcare_medtech_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/workspaces/iotConnectors"
+  },
+  {
+    "resourceType": "azurerm_healthcare_medtech_service_fhir_destination",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/workspaces/iotConnectors/fhirDestinations"
+  },
+  {
+    "resourceType": "azurerm_healthcare_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/services"
+  },
+  {
+    "resourceType": "azurerm_healthcare_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.HealthcareApis/workspaces"
+  },
+  {
+    "resourceType": "azurerm_hpc_cache",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/caches"
+  },
+  {
+    "resourceType": "azurerm_hpc_cache_access_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/caches/cacheAccessPolicies"
+  },
+  {
+    "resourceType": "azurerm_hpc_cache_blob_nfs_target",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/caches/storageTargets"
+  },
+  {
+    "resourceType": "azurerm_hpc_cache_blob_target",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/caches/storageTargets"
+  },
+  {
+    "resourceType": "azurerm_hpc_cache_nfs_target",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/caches/storageTargets"
+  },
+  {
+    "resourceType": "azurerm_image",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/images"
+  },
+  {
+    "resourceType": "azurerm_iot_security_device_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/providers/Microsoft.Security/deviceSecurityGroups"
+  },
+  {
+    "resourceType": "azurerm_iot_security_solution",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Security/iotSecuritySolutions"
+  },
+  {
+    "resourceType": "azurerm_iotcentral_application",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.IoTCentral/iotApps"
+  },
+  {
+    "resourceType": "azurerm_iotcentral_application_network_rule_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.IoTCentral/iotApps"
+  },
+  {
+    "resourceType": "azurerm_iotcentral_organization",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.IoTCentral/iotApps/organizations"
+  },
+  {
+    "resourceType": "azurerm_iothub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs"
+  },
+  {
+    "resourceType": "azurerm_iothub_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/certificates"
+  },
+  {
+    "resourceType": "azurerm_iothub_consumer_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/eventHubEndpoints/consumerGroups"
+  },
+  {
+    "resourceType": "azurerm_iothub_device_update_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DeviceUpdate/accounts"
+  },
+  {
+    "resourceType": "azurerm_iothub_device_update_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DeviceUpdate/accounts/instances"
+  },
+  {
+    "resourceType": "azurerm_iothub_dps",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/provisioningServices"
+  },
+  {
+    "resourceType": "azurerm_iothub_dps_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/provisioningServices/certificates"
+  },
+  {
+    "resourceType": "azurerm_iothub_dps_shared_access_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/provisioningServices/keys"
+  },
+  {
+    "resourceType": "azurerm_iothub_endpoint_cosmosdb_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/endpoints"
+  },
+  {
+    "resourceType": "azurerm_iothub_endpoint_eventhub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/endpoints"
+  },
+  {
+    "resourceType": "azurerm_iothub_endpoint_servicebus_queue",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/endpoints"
+  },
+  {
+    "resourceType": "azurerm_iothub_endpoint_servicebus_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/endpoints"
+  },
+  {
+    "resourceType": "azurerm_iothub_endpoint_storage_container",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/endpoints"
+  },
+  {
+    "resourceType": "azurerm_iothub_enrichment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/enrichments"
+  },
+  {
+    "resourceType": "azurerm_iothub_fallback_route",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/fallbackRoute"
+  },
+  {
+    "resourceType": "azurerm_iothub_file_upload",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs"
+  },
+  {
+    "resourceType": "azurerm_iothub_route",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/routes"
+  },
+  {
+    "resourceType": "azurerm_iothub_shared_access_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Devices/iotHubs/iotHubKeys"
+  },
+  {
+    "resourceType": "azurerm_ip_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/ipGroups"
+  },
+  {
+    "resourceType": "azurerm_ip_group_cidr",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/ipGroups/cidrs"
+  },
+  {
+    "resourceType": "azurerm_key_vault",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.KeyVault/vaults"
+  },
+  {
+    "resourceType": "azurerm_key_vault_access_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.KeyVault/vaults/objectId"
+  },
+  {
+    "resourceType": "azurerm_key_vault_managed_hardware_security_module",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.KeyVault/managedHSMs"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/managedClusters"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_cluster_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/managedClusters/providers/Microsoft.KubernetesConfiguration/extensions"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_cluster_node_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/managedClusters/agentPools"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_cluster_trusted_access_role_binding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_fleet_manager",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/fleets"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_fleet_member",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/fleets/members"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_fleet_update_run",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/fleets/updateRuns"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_fleet_update_strategy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/fleets/updateStrategies"
+  },
+  {
+    "resourceType": "azurerm_kubernetes_flux_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ContainerService/managedClusters/providers/Microsoft.KubernetesConfiguration/fluxConfigurations"
+  },
+  {
+    "resourceType": "azurerm_kusto_attached_database_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/attachedDatabaseConfigurations"
+  },
+  {
+    "resourceType": "azurerm_kusto_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters"
+  },
+  {
+    "resourceType": "azurerm_kusto_cluster_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters"
+  },
+  {
+    "resourceType": "azurerm_kusto_cluster_managed_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/managedPrivateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_kusto_cluster_principal_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/principalAssignments"
+  },
+  {
+    "resourceType": "azurerm_kusto_cosmosdb_data_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/dataConnections"
+  },
+  {
+    "resourceType": "azurerm_kusto_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases"
+  },
+  {
+    "resourceType": "azurerm_kusto_database_principal_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/principalAssignments"
+  },
+  {
+    "resourceType": "azurerm_kusto_eventgrid_data_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/dataConnections"
+  },
+  {
+    "resourceType": "azurerm_kusto_eventhub_data_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/dataConnections"
+  },
+  {
+    "resourceType": "azurerm_kusto_iothub_data_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/dataConnections"
+  },
+  {
+    "resourceType": "azurerm_kusto_script",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Kusto/clusters/databases/scripts"
+  },
+  {
+    "resourceType": "azurerm_lb",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers"
+  },
+  {
+    "resourceType": "azurerm_lb_backend_address_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/backendAddressPools"
+  },
+  {
+    "resourceType": "azurerm_lb_backend_address_pool_address",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/backendAddressPools/addresses"
+  },
+  {
+    "resourceType": "azurerm_lb_nat_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/inboundNatPools"
+  },
+  {
+    "resourceType": "azurerm_lb_nat_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/inboundNatRules"
+  },
+  {
+    "resourceType": "azurerm_lb_outbound_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/outboundRules"
+  },
+  {
+    "resourceType": "azurerm_lb_probe",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/probes"
+  },
+  {
+    "resourceType": "azurerm_lb_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/loadBalancers/loadBalancingRules"
+  },
+  {
+    "resourceType": "azurerm_lighthouse_assignment",
+    "idPattern": "/subscriptions/providers/Microsoft.ManagedServices/registrationAssignments"
+  },
+  {
+    "resourceType": "azurerm_lighthouse_definition",
+    "idPattern": "/subscriptions/providers/Microsoft.ManagedServices/registrationDefinitions"
+  },
+  {
+    "resourceType": "azurerm_linux_function_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_linux_function_app_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_linux_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines"
+  },
+  {
+    "resourceType": "azurerm_linux_virtual_machine_scale_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets"
+  },
+  {
+    "resourceType": "azurerm_linux_web_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_linux_web_app_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_load_test",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.LoadTestService/loadTests"
+  },
+  {
+    "resourceType": "azurerm_local_network_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/localNetworkGateways"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/clusters"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_cluster_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/clusters"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_data_export_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/dataExports"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_datasource_windows_event",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/dataSources"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_datasource_windows_performance_counter",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/dataSources"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_linked_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/linkedServices"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_linked_storage_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/linkedStorageAccounts"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_query_pack",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/queryPacks"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_query_pack_query",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/queryPacks/queries"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_saved_search",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/savedSearches"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_solution",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationsManagement/solutions"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_storage_insights",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/storageInsightConfigs"
+  },
+  {
+    "resourceType": "azurerm_log_analytics_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces"
+  },
+  {
+    "resourceType": "azurerm_logic_app_action_custom",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows/actions"
+  },
+  {
+    "resourceType": "azurerm_logic_app_action_http",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows/actions"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_agreement",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/agreements"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_assembly",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/assemblies"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_batch_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/batchConfigurations"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/certificates"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_map",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/maps"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_partner",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/partners"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_schema",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/schemas"
+  },
+  {
+    "resourceType": "azurerm_logic_app_integration_account_session",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/integrationAccounts/sessions"
+  },
+  {
+    "resourceType": "azurerm_logic_app_standard",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_logic_app_trigger_custom",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows/triggers"
+  },
+  {
+    "resourceType": "azurerm_logic_app_trigger_http_request",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows/triggers"
+  },
+  {
+    "resourceType": "azurerm_logic_app_trigger_recurrence",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows/triggers"
+  },
+  {
+    "resourceType": "azurerm_logic_app_workflow",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Logic/workflows"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_compute_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/computes"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_compute_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/computes"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_datastore_blobstorage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/dataStores"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_datastore_datalake_gen2",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/dataStores"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_datastore_fileshare",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/dataStores"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_inference_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/computes"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_synapse_spark",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/computes"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces"
+  },
+  {
+    "resourceType": "azurerm_machine_learning_workspace_network_outbound_rule_fqdn",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MachineLearningServices/workspaces/outboundRules"
+  },
+  {
+    "resourceType": "azurerm_maintenance_assignment_dedicated_host",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/hostGroups/hosts/providers/Microsoft.Maintenance/configurationAssignments"
+  },
+  {
+    "resourceType": "azurerm_maintenance_assignment_dynamic_scope",
+    "idPattern": "/subscriptions/providers/Microsoft.Maintenance/configurationAssignments"
+  },
+  {
+    "resourceType": "azurerm_maintenance_assignment_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.Maintenance/configurationAssignments"
+  },
+  {
+    "resourceType": "azurerm_maintenance_assignment_virtual_machine_scale_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets/providers/Microsoft.Maintenance/configurationAssignments"
+  },
+  {
+    "resourceType": "azurerm_maintenance_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Maintenance/maintenanceConfigurations"
+  },
+  {
+    "resourceType": "azurerm_managed_application",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Solutions/applications"
+  },
+  {
+    "resourceType": "azurerm_managed_application_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Solutions/applicationDefinitions"
+  },
+  {
+    "resourceType": "azurerm_managed_disk",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/disks"
+  },
+  {
+    "resourceType": "azurerm_managed_disk_sas_token",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/disks"
+  },
+  {
+    "resourceType": "azurerm_managed_lustre_file_system",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageCache/amlFilesystems"
+  },
+  {
+    "resourceType": "azurerm_management_group",
+    "idPattern": "/providers/Microsoft.Management/managementGroups"
+  },
+  {
+    "resourceType": "azurerm_management_group_policy_assignment",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "resourceType": "azurerm_management_group_policy_exemption",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Authorization/policyExemptions"
+  },
+  {
+    "resourceType": "azurerm_management_group_policy_remediation",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.PolicyInsights/remediations"
+  },
+  {
+    "resourceType": "azurerm_management_group_subscription_association",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/subscriptions"
+  },
+  {
+    "resourceType": "azurerm_management_group_template_deployment",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Resources/deployments"
+  },
+  {
+    "resourceType": "azurerm_management_lock",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Authorization/locks"
+  },
+  {
+    "resourceType": "azurerm_maps_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Maps/accounts"
+  },
+  {
+    "resourceType": "azurerm_maps_creator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Maps/accounts/creators"
+  },
+  {
+    "resourceType": "azurerm_marketplace_agreement",
+    "idPattern": "/subscriptions/providers/Microsoft.MarketplaceOrdering/agreements/offers/plans"
+  },
+  {
+    "resourceType": "azurerm_marketplace_role_assignment",
+    "idPattern": "/providers/Microsoft.Marketplace/providers/Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "resourceType": "azurerm_mobile_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_attached_data_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_data_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks/dataNetworks"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_packet_core_control_plane",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/packetCoreControlPlanes"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_packet_core_data_plane",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks/services"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_sim",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/simGroups/sims"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_sim_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/simGroups"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_sim_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks/simPolicies"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_site",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks/sites"
+  },
+  {
+    "resourceType": "azurerm_mobile_network_slice",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MobileNetwork/mobileNetworks/slices"
+  },
+  {
+    "resourceType": "azurerm_mongo_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DocumentDB/mongoClusters"
+  },
+  {
+    "resourceType": "azurerm_monitor_aad_diagnostic_setting",
+    "idPattern": "/providers/Microsoft.AADIAM/diagnosticSettings"
+  },
+  {
+    "resourceType": "azurerm_monitor_action_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/actionGroups"
+  },
+  {
+    "resourceType": "azurerm_monitor_activity_log_alert",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/activityLogAlerts"
+  },
+  {
+    "resourceType": "azurerm_monitor_alert_processing_rule_action_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AlertsManagement/actionRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_alert_processing_rule_suppression",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AlertsManagement/actionRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_alert_prometheus_rule_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AlertsManagement/prometheusRuleGroups"
+  },
+  {
+    "resourceType": "azurerm_monitor_autoscale_setting",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/autoScaleSettings"
+  },
+  {
+    "resourceType": "azurerm_monitor_data_collection_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/dataCollectionEndpoints"
+  },
+  {
+    "resourceType": "azurerm_monitor_data_collection_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/dataCollectionRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_data_collection_rule_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.Insights/dataCollectionRuleAssociations"
+  },
+  {
+    "resourceType": "azurerm_monitor_diagnostic_setting",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.KeyVault/vaults"
+  },
+  {
+    "resourceType": "azurerm_monitor_metric_alert",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/metricAlerts"
+  },
+  {
+    "resourceType": "azurerm_monitor_private_link_scope",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/privateLinkScopes"
+  },
+  {
+    "resourceType": "azurerm_monitor_private_link_scoped_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/privateLinkScopes/scopedResources"
+  },
+  {
+    "resourceType": "azurerm_monitor_scheduled_query_rules_alert",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/scheduledQueryRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_scheduled_query_rules_alert_v2",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/scheduledQueryRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_scheduled_query_rules_log",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Insights/scheduledQueryRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_smart_detector_alert_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AlertsManagement/smartDetectorAlertRules"
+  },
+  {
+    "resourceType": "azurerm_monitor_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Monitor/accounts"
+  },
+  {
+    "resourceType": "azurerm_mssql_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/databases"
+  },
+  {
+    "resourceType": "azurerm_mssql_database_extended_auditing_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/databases/extendedAuditingSettings"
+  },
+  {
+    "resourceType": "azurerm_mssql_database_vulnerability_assessment_rule_baseline",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/databases/vulnerabilityAssessments/rules/baselines"
+  },
+  {
+    "resourceType": "azurerm_mssql_elasticpool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/elasticPools"
+  },
+  {
+    "resourceType": "azurerm_mssql_failover_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/failoverGroups"
+  },
+  {
+    "resourceType": "azurerm_mssql_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_mssql_job_agent",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/jobAgents"
+  },
+  {
+    "resourceType": "azurerm_mssql_job_credential",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/jobAgents/credentials"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances/databases"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance_active_directory_administrator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances/administrators"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance_failover_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/locations/instanceFailoverGroups"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance_security_alert_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances/securityAlertPolicies"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance_transparent_data_encryption",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances/encryptionProtector"
+  },
+  {
+    "resourceType": "azurerm_mssql_managed_instance_vulnerability_assessment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/managedInstances/vulnerabilityAssessments"
+  },
+  {
+    "resourceType": "azurerm_mssql_outbound_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/outboundFirewallRules"
+  },
+  {
+    "resourceType": "azurerm_mssql_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_dns_alias",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/dnsAliases"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_extended_auditing_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/extendedAuditingSettings"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_microsoft_support_auditing_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/devOpsAuditingSettings"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_security_alert_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/securityAlertPolicies"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_transparent_data_encryption",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/encryptionProtector"
+  },
+  {
+    "resourceType": "azurerm_mssql_server_vulnerability_assessment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/vulnerabilityAssessments"
+  },
+  {
+    "resourceType": "azurerm_mssql_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines"
+  },
+  {
+    "resourceType": "azurerm_mssql_virtual_machine_availability_group_listener",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups/availabilityGroupListeners"
+  },
+  {
+    "resourceType": "azurerm_mssql_virtual_machine_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups"
+  },
+  {
+    "resourceType": "azurerm_mssql_virtual_network_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Sql/servers/virtualNetworkRules"
+  },
+  {
+    "resourceType": "azurerm_mysql_flexible_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforMySQL/flexibleServers/databases"
+  },
+  {
+    "resourceType": "azurerm_mysql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforMySQL/flexibleServers"
+  },
+  {
+    "resourceType": "azurerm_mysql_flexible_server_active_directory_administrator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforMySQL/flexibleServers/administrators"
+  },
+  {
+    "resourceType": "azurerm_mysql_flexible_server_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforMySQL/flexibleServers/configurations"
+  },
+  {
+    "resourceType": "azurerm_mysql_flexible_server_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforMySQL/flexibleServers/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_nat_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/natGateways"
+  },
+  {
+    "resourceType": "azurerm_nat_gateway_public_ip_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/natGateways"
+  },
+  {
+    "resourceType": "azurerm_nat_gateway_public_ip_prefix_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/natGateways"
+  },
+  {
+    "resourceType": "azurerm_netapp_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts"
+  },
+  {
+    "resourceType": "azurerm_netapp_account_encryption",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts"
+  },
+  {
+    "resourceType": "azurerm_netapp_backup_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/backupPolicies"
+  },
+  {
+    "resourceType": "azurerm_netapp_backup_vault",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/backupVaults"
+  },
+  {
+    "resourceType": "azurerm_netapp_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/capacityPools"
+  },
+  {
+    "resourceType": "azurerm_netapp_snapshot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots"
+  },
+  {
+    "resourceType": "azurerm_netapp_snapshot_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/snapshotPolicies"
+  },
+  {
+    "resourceType": "azurerm_netapp_volume",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/capacityPools/volumes"
+  },
+  {
+    "resourceType": "azurerm_netapp_volume_group_sap_hana",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/volumeGroups"
+  },
+  {
+    "resourceType": "azurerm_netapp_volume_quota_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules"
+  },
+  {
+    "resourceType": "azurerm_network_connection_monitor",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkWatchers/connectionMonitors"
+  },
+  {
+    "resourceType": "azurerm_network_ddos_protection_plan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/ddosProtectionPlans"
+  },
+  {
+    "resourceType": "azurerm_network_function_azure_traffic_collector",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetworkFunction/azureTrafficCollectors"
+  },
+  {
+    "resourceType": "azurerm_network_function_collector_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NetworkFunction/azureTrafficCollectors/collectorPolicies"
+  },
+  {
+    "resourceType": "azurerm_network_interface",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces"
+  },
+  {
+    "resourceType": "azurerm_network_interface_application_gateway_backend_address_pool_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces/ipConfigurations"
+  },
+  {
+    "resourceType": "azurerm_network_interface_application_security_group_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces"
+  },
+  {
+    "resourceType": "azurerm_network_interface_backend_address_pool_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces/ipConfigurations"
+  },
+  {
+    "resourceType": "azurerm_network_interface_nat_rule_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces/ipConfigurations"
+  },
+  {
+    "resourceType": "azurerm_network_interface_security_group_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkInterfaces"
+  },
+  {
+    "resourceType": "azurerm_network_manager",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers"
+  },
+  {
+    "resourceType": "azurerm_network_manager_admin_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/securityAdminConfigurations/ruleCollections/rules"
+  },
+  {
+    "resourceType": "azurerm_network_manager_admin_rule_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/securityAdminConfigurations/ruleCollections"
+  },
+  {
+    "resourceType": "azurerm_network_manager_connectivity_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/connectivityConfigurations"
+  },
+  {
+    "resourceType": "azurerm_network_manager_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers"
+  },
+  {
+    "resourceType": "azurerm_network_manager_management_group_connection",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Network/networkManagerConnections"
+  },
+  {
+    "resourceType": "azurerm_network_manager_network_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/networkGroups"
+  },
+  {
+    "resourceType": "azurerm_network_manager_scope_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/scopeConnections"
+  },
+  {
+    "resourceType": "azurerm_network_manager_security_admin_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/securityAdminConfigurations"
+  },
+  {
+    "resourceType": "azurerm_network_manager_static_member",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkManagers/networkGroups/staticMembers"
+  },
+  {
+    "resourceType": "azurerm_network_manager_subscription_connection",
+    "idPattern": "/subscriptions/providers/Microsoft.Network/networkManagerConnections"
+  },
+  {
+    "resourceType": "azurerm_network_profile",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkProfiles"
+  },
+  {
+    "resourceType": "azurerm_network_security_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkSecurityGroups"
+  },
+  {
+    "resourceType": "azurerm_network_security_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkSecurityGroups/securityRules"
+  },
+  {
+    "resourceType": "azurerm_network_watcher",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkWatchers"
+  },
+  {
+    "resourceType": "azurerm_network_watcher_flow_log",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkWatchers/flowLogs"
+  },
+  {
+    "resourceType": "azurerm_new_relic_monitor",
+    "idPattern": "/subscriptions/resourceGroups/providers/NewRelic.Observability/monitors"
+  },
+  {
+    "resourceType": "azurerm_new_relic_tag_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/NewRelic.Observability/monitors/tagRules"
+  },
+  {
+    "resourceType": "azurerm_nginx_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Nginx.NginxPlus/nginxDeployments/certificates"
+  },
+  {
+    "resourceType": "azurerm_nginx_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Nginx.NginxPlus/nginxDeployments/configurations"
+  },
+  {
+    "resourceType": "azurerm_nginx_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Nginx.NginxPlus/nginxDeployments"
+  },
+  {
+    "resourceType": "azurerm_notification_hub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NotificationHubs/namespaces/notificationHubs"
+  },
+  {
+    "resourceType": "azurerm_notification_hub_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NotificationHubs/namespaces/notificationHubs/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_notification_hub_namespace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.NotificationHubs/namespaces"
+  },
+  {
+    "resourceType": "azurerm_oracle_autonomous_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Oracle.Database/autonomousDatabases"
+  },
+  {
+    "resourceType": "azurerm_oracle_cloud_vm_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Oracle.Database/cloudVmClusters"
+  },
+  {
+    "resourceType": "azurerm_oracle_exadata_infrastructure",
+    "idPattern": "/subscriptions/resourceGroups/providers/Oracle.Database/cloudExadataInfrastructures"
+  },
+  {
+    "resourceType": "azurerm_orbital_contact",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Orbital/spacecrafts/contacts"
+  },
+  {
+    "resourceType": "azurerm_orbital_contact_profile",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Orbital/contactProfiles"
+  },
+  {
+    "resourceType": "azurerm_orbital_spacecraft",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Orbital/spacecrafts"
+  },
+  {
+    "resourceType": "azurerm_orchestrated_virtual_machine_scale_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_local_rulestack",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/localRulestacks"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_local_rulestack_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/localRulestacks/certificates"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_local_rulestack_fqdn_list",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/localRulestacks/fqdnLists"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_local_rulestack_prefix_list",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/localRulestacks/prefixLists"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_local_rulestack_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/localRulestacks/localRules"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/firewalls"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/firewalls"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/firewalls"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_next_generation_firewall_virtual_network_panorama",
+    "idPattern": "/subscriptions/resourceGroups/providers/PaloAltoNetworks.Cloudngfw/firewalls"
+  },
+  {
+    "resourceType": "azurerm_palo_alto_virtual_network_appliance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkVirtualAppliances"
+  },
+  {
+    "resourceType": "azurerm_pim_active_role_assignment",
+    "idPattern": "/subscriptions"
+  },
+  {
+    "resourceType": "azurerm_pim_eligible_role_assignment",
+    "idPattern": "/subscriptions"
+  },
+  {
+    "resourceType": "azurerm_point_to_site_vpn_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/p2sVpnGateways"
+  },
+  {
+    "resourceType": "azurerm_policy_definition",
+    "idPattern": "/providers/Microsoft.Management"
+  },
+  {
+    "resourceType": "azurerm_policy_set_definition",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Authorization/policySetDefinitions"
+  },
+  {
+    "resourceType": "azurerm_policy_virtual_machine_configuration_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.GuestConfiguration/guestConfigurationAssignments"
+  },
+  {
+    "resourceType": "azurerm_portal_dashboard",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Portal/dashboards"
+  },
+  {
+    "resourceType": "azurerm_portal_tenant_configuration",
+    "idPattern": "/providers/Microsoft.Portal/tenantConfigurations"
+  },
+  {
+    "resourceType": "azurerm_postgresql_active_directory_administrator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers"
+  },
+  {
+    "resourceType": "azurerm_postgresql_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers/configurations"
+  },
+  {
+    "resourceType": "azurerm_postgresql_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers/databases"
+  },
+  {
+    "resourceType": "azurerm_postgresql_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server_active_directory_administrator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers/administrators"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers/configurations"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers/databases"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server_virtual_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/flexibleServers/virtualEndpoints"
+  },
+  {
+    "resourceType": "azurerm_postgresql_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers"
+  },
+  {
+    "resourceType": "azurerm_postgresql_server_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers/keys"
+  },
+  {
+    "resourceType": "azurerm_postgresql_virtual_network_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DBforPostgreSQL/servers/virtualNetworkRules"
+  },
+  {
+    "resourceType": "azurerm_powerbi_embedded",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.PowerBIDedicated/capacities"
+  },
+  {
+    "resourceType": "azurerm_private_dns_a_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/A"
+  },
+  {
+    "resourceType": "azurerm_private_dns_aaaa_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/AAAA"
+  },
+  {
+    "resourceType": "azurerm_private_dns_cname_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/CNAME"
+  },
+  {
+    "resourceType": "azurerm_private_dns_mx_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones"
+  },
+  {
+    "resourceType": "azurerm_private_dns_ptr_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/PTR"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsResolvers"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver_dns_forwarding_ruleset",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsForwardingRulesets"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver_forwarding_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsForwardingRulesets/forwardingRules"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver_inbound_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsResolvers/inboundEndpoints"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver_outbound_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsResolvers/outboundEndpoints"
+  },
+  {
+    "resourceType": "azurerm_private_dns_resolver_virtual_network_link",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/dnsForwardingRulesets/virtualNetworkLinks"
+  },
+  {
+    "resourceType": "azurerm_private_dns_srv_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/SRV"
+  },
+  {
+    "resourceType": "azurerm_private_dns_txt_record",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/TXT"
+  },
+  {
+    "resourceType": "azurerm_private_dns_zone",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones"
+  },
+  {
+    "resourceType": "azurerm_private_dns_zone_virtual_network_link",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+  },
+  {
+    "resourceType": "azurerm_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_private_endpoint_application_security_group_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_private_link_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/privateLinkServices"
+  },
+  {
+    "resourceType": "azurerm_proximity_placement_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/proximityPlacementGroups"
+  },
+  {
+    "resourceType": "azurerm_public_ip",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/publicIPAddresses"
+  },
+  {
+    "resourceType": "azurerm_public_ip_prefix",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/publicIPPrefixes"
+  },
+  {
+    "resourceType": "azurerm_purview_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Purview/accounts"
+  },
+  {
+    "resourceType": "azurerm_recovery_services_vault",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults"
+  },
+  {
+    "resourceType": "azurerm_recovery_services_vault_resource_guard_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/backupResourceGuardProxies"
+  },
+  {
+    "resourceType": "azurerm_redhat_openshift_cluster",
+    "idPattern": "/subscriptions/resourcegroups/providers/Microsoft.RedHatOpenShift/openShiftClusters"
+  },
+  {
+    "resourceType": "azurerm_redis_cache",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redis"
+  },
+  {
+    "resourceType": "azurerm_redis_cache_access_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redis/accessPolicies"
+  },
+  {
+    "resourceType": "azurerm_redis_cache_access_policy_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redis/accessPolicyAssignments"
+  },
+  {
+    "resourceType": "azurerm_redis_enterprise_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redisEnterprise"
+  },
+  {
+    "resourceType": "azurerm_redis_enterprise_database",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redisEnterprise/databases"
+  },
+  {
+    "resourceType": "azurerm_redis_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redis/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_redis_linked_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Cache/redis/linkedServers"
+  },
+  {
+    "resourceType": "azurerm_relay_hybrid_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Relay/namespaces/hybridConnections"
+  },
+  {
+    "resourceType": "azurerm_relay_hybrid_connection_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Relay/namespaces/hybridConnections/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_relay_namespace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Relay/namespaces"
+  },
+  {
+    "resourceType": "azurerm_relay_namespace_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Relay/namespaces/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_resource_deployment_script_azure_cli",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Resources/deploymentScripts"
+  },
+  {
+    "resourceType": "azurerm_resource_deployment_script_azure_power_shell",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Resources/deploymentScripts"
+  },
+  {
+    "resourceType": "azurerm_resource_group",
+    "idPattern": "/subscriptions/resourceGroups"
+  },
+  {
+    "resourceType": "azurerm_resource_group_cost_management_export",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CostManagement/exports"
+  },
+  {
+    "resourceType": "azurerm_resource_group_cost_management_view",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CostManagement/views"
+  },
+  {
+    "resourceType": "azurerm_resource_group_policy_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "resourceType": "azurerm_resource_group_policy_exemption",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Authorization/policyExemptions"
+  },
+  {
+    "resourceType": "azurerm_resource_group_policy_remediation",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.PolicyInsights/remediations"
+  },
+  {
+    "resourceType": "azurerm_resource_group_template_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Resources/deployments"
+  },
+  {
+    "resourceType": "azurerm_resource_management_private_link",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Authorization/resourceManagementPrivateLinks"
+  },
+  {
+    "resourceType": "azurerm_resource_management_private_link_association",
+    "idPattern": "/providers/Microsoft.Management/managementGroups/providers/Microsoft.Authorization/privateLinkAssociations"
+  },
+  {
+    "resourceType": "azurerm_resource_policy_exemption",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Authorization/policyExemptions"
+  },
+  {
+    "resourceType": "azurerm_resource_policy_remediation",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.PolicyInsights/remediations"
+  },
+  {
+    "resourceType": "azurerm_resource_provider_registration",
+    "idPattern": "/subscriptions/providers/Microsoft.PolicyInsights"
+  },
+  {
+    "resourceType": "azurerm_role_assignment",
+    "idPattern": "/subscriptions/providers/Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "resourceType": "azurerm_role_definition",
+    "idPattern": "/subscriptions/providers/Microsoft.Authorization/roleDefinitions"
+  },
+  {
+    "resourceType": "azurerm_route",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/routeTables/routes"
+  },
+  {
+    "resourceType": "azurerm_route_filter",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/routeFilters"
+  },
+  {
+    "resourceType": "azurerm_route_map",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/routeMaps"
+  },
+  {
+    "resourceType": "azurerm_route_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs"
+  },
+  {
+    "resourceType": "azurerm_route_server_bgp_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/bgpConnections"
+  },
+  {
+    "resourceType": "azurerm_route_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/routeTables"
+  },
+  {
+    "resourceType": "azurerm_search_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Search/searchServices"
+  },
+  {
+    "resourceType": "azurerm_search_shared_private_link_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Search/searchServices/sharedPrivateLinkResources"
+  },
+  {
+    "resourceType": "azurerm_security_center_assessment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets/providers/Microsoft.Security/assessments"
+  },
+  {
+    "resourceType": "azurerm_security_center_assessment_policy",
+    "idPattern": "/subscriptions/providers/Microsoft.Security/assessmentMetadata"
+  },
+  {
+    "resourceType": "azurerm_security_center_auto_provisioning",
+    "idPattern": "/subscriptions/providers/Microsoft.Security/autoProvisioningSettings"
+  },
+  {
+    "resourceType": "azurerm_security_center_automation",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Security/automations"
+  },
+  {
+    "resourceType": "azurerm_security_center_contact",
+    "idPattern": "/subscriptions/providers/Microsoft.Security/securityContacts"
+  },
+  {
+    "resourceType": "azurerm_security_center_server_vulnerability_assessment_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.Security/serverVulnerabilityAssessments"
+  },
+  {
+    "resourceType": "azurerm_security_center_server_vulnerability_assessments_setting",
+    "idPattern": "/subscriptions/providers/Microsoft.Security/serverVulnerabilityAssessmentsSettings"
+  },
+  {
+    "resourceType": "azurerm_security_center_setting",
+    "idPattern": "/subscriptions/providers/Microsoft.Security"
+  },
+  {
+    "resourceType": "azurerm_security_center_storage_defender",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_security_center_subscription_pricing",
+    "idPattern": "/subscriptions/providers/Microsoft.Security"
+  },
+  {
+    "resourceType": "azurerm_security_center_workspace",
+    "idPattern": "/subscriptions/providers/Microsoft.Security/workspaceSettings"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_anomaly_built_in",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/securityMLAnalyticsSettings"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_anomaly_duplicate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/securityMLAnalyticsSettings"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_fusion",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_machine_learning_behavior_analytics",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_ms_security_incident",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_nrt",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_scheduled",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_alert_rule_threat_intelligence",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/alertRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_automation_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/automationRules"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_aws_cloud_trail",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_aws_s3",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_azure_active_directory",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_azure_advanced_threat_protection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_azure_security_center",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_dynamics_365",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_iot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_microsoft_cloud_app_security",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_microsoft_threat_intelligence",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_microsoft_threat_protection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_office_365",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_office_365_project",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_office_atp",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_office_irm",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_office_power_bi",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_threat_intelligence",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_data_connector_threat_intelligence_taxii",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/dataConnectors"
+  },
+  {
+    "resourceType": "azurerm_sentinel_log_analytics_workspace_onboarding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/onboardingStates"
+  },
+  {
+    "resourceType": "azurerm_sentinel_metadata",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/metadata"
+  },
+  {
+    "resourceType": "azurerm_sentinel_threat_intelligence_indicator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/threatIntelligence/indicators"
+  },
+  {
+    "resourceType": "azurerm_sentinel_watchlist",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/watchlists"
+  },
+  {
+    "resourceType": "azurerm_sentinel_watchlist_item",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.OperationalInsights/workspaces/providers/Microsoft.SecurityInsights/watchlists/watchlistItems"
+  },
+  {
+    "resourceType": "azurerm_service_fabric_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceFabric/clusters"
+  },
+  {
+    "resourceType": "azurerm_service_fabric_managed_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceFabric/managedClusters"
+  },
+  {
+    "resourceType": "azurerm_service_plan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/serverFarms"
+  },
+  {
+    "resourceType": "azurerm_servicebus_namespace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces"
+  },
+  {
+    "resourceType": "azurerm_servicebus_namespace_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_servicebus_namespace_disaster_recovery_config",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs"
+  },
+  {
+    "resourceType": "azurerm_servicebus_queue",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/queues"
+  },
+  {
+    "resourceType": "azurerm_servicebus_queue_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/queues/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_servicebus_subscription",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/topics/subscriptions"
+  },
+  {
+    "resourceType": "azurerm_servicebus_subscription_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/topics/subscriptions/rules"
+  },
+  {
+    "resourceType": "azurerm_servicebus_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/topics"
+  },
+  {
+    "resourceType": "azurerm_servicebus_topic_authorization_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ServiceBus/namespaces/topics/authorizationRules"
+  },
+  {
+    "resourceType": "azurerm_shared_image",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/galleries/images"
+  },
+  {
+    "resourceType": "azurerm_shared_image_gallery",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/galleries"
+  },
+  {
+    "resourceType": "azurerm_shared_image_version",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/galleries/images/versions"
+  },
+  {
+    "resourceType": "azurerm_signalr_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/signalR"
+  },
+  {
+    "resourceType": "azurerm_signalr_service_custom_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/signalR/customCertificates"
+  },
+  {
+    "resourceType": "azurerm_signalr_service_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/signalR/customDomains"
+  },
+  {
+    "resourceType": "azurerm_signalr_service_network_acl",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/signalR"
+  },
+  {
+    "resourceType": "azurerm_signalr_shared_private_link_resource",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/signalR/sharedPrivateLinkResources"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_fabric",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_hyperv_network_mapping",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_hyperv_replication_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationPolicies"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_hyperv_replication_policy_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_network_mapping",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_protection_container",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_protection_container_mapping",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_replicated_vm",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_replication_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationPolicies"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_replication_recovery_plan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationRecoveryPlans"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_services_vault_hyperv_site",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_vmware_replicated_vm",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_vmware_replication_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationPolicies"
+  },
+  {
+    "resourceType": "azurerm_site_recovery_vmware_replication_policy_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings"
+  },
+  {
+    "resourceType": "azurerm_snapshot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/snapshots"
+  },
+  {
+    "resourceType": "azurerm_source_control_token",
+    "idPattern": "/providers/Microsoft.Web/sourceControls"
+  },
+  {
+    "resourceType": "azurerm_spatial_anchors_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.MixedReality/spatialAnchorsAccounts"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_accelerator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/applicationAccelerators"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_active_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_api_portal",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apiPortals"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_api_portal_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apiPortals/domains"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_app_cosmosdb_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/bindings"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_app_dynamics_application_performance_monitoring",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apms"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_app_mysql_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/bindings"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_app_redis_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/bindings"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_application_insights_application_performance_monitoring",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apms"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_application_live_view",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/applicationLiveViews"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_build_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/deployments"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_build_pack_binding",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/buildServices/builders/buildPackBindings"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_builder",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/buildServices/builders"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/certificates"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_configuration_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/configurationServices"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/Spring/apps/deployments/providers/Microsoft.ServiceLinker/linkers"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_container_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/deployments"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/domains"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_customized_accelerator",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/applicationAccelerators/customizedAccelerators"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_dev_tool_portal",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/Spring/DevToolPortals"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_dynatrace_application_performance_monitoring",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apms"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_elastic_application_performance_monitoring",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apms"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/gateways"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_gateway_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/gateways/domains"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_gateway_route_config",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/gateways/routeConfigs"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_java_deployment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apps/deployments"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_new_relic_application_performance_monitoring",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/apms"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring"
+  },
+  {
+    "resourceType": "azurerm_spring_cloud_storage",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AppPlatform/spring/storages"
+  },
+  {
+    "resourceType": "azurerm_ssh_public_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/sshPublicKeys"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/clusters"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_deployment_setting",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/clusters/deploymentSettings"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/clusters/arcSettings/extensions"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_logical_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/logicalNetworks"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_marketplace_gallery_image",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/marketplaceGalleryImages"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_network_interface",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/networkInterfaces"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_storage_path",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/storageContainers"
+  },
+  {
+    "resourceType": "azurerm_stack_hci_virtual_hard_disk",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AzureStackHCI/virtualHardDisks"
+  },
+  {
+    "resourceType": "azurerm_static_site",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/staticSites"
+  },
+  {
+    "resourceType": "azurerm_static_site_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/staticSites/customDomains"
+  },
+  {
+    "resourceType": "azurerm_static_web_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/staticSites"
+  },
+  {
+    "resourceType": "azurerm_static_web_app_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/staticSites/customDomains"
+  },
+  {
+    "resourceType": "azurerm_static_web_app_function_app_registration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/staticSites/userProvidedFunctionApps"
+  },
+  {
+    "resourceType": "azurerm_storage_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_account_customer_managed_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_account_local_user",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/localUsers"
+  },
+  {
+    "resourceType": "azurerm_storage_account_network_rules",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_account_queue_properties",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_account_static_website",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_blob_inventory_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts"
+  },
+  {
+    "resourceType": "azurerm_storage_container_immutability_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies"
+  },
+  {
+    "resourceType": "azurerm_storage_encryption_scope",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/encryptionScopes"
+  },
+  {
+    "resourceType": "azurerm_storage_management_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/managementPolicies"
+  },
+  {
+    "resourceType": "azurerm_storage_mover",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers"
+  },
+  {
+    "resourceType": "azurerm_storage_mover_agent",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers/agents"
+  },
+  {
+    "resourceType": "azurerm_storage_mover_job_definition",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers/projects/jobDefinitions"
+  },
+  {
+    "resourceType": "azurerm_storage_mover_project",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers/projects"
+  },
+  {
+    "resourceType": "azurerm_storage_mover_source_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers/endpoints"
+  },
+  {
+    "resourceType": "azurerm_storage_mover_target_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageMover/storageMovers/endpoints"
+  },
+  {
+    "resourceType": "azurerm_storage_object_replication",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/objectReplicationPolicies"
+  },
+  {
+    "resourceType": "azurerm_storage_share",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Storage/storageAccounts/fileServices/shares"
+  },
+  {
+    "resourceType": "azurerm_storage_sync",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageSync/storageSyncServices"
+  },
+  {
+    "resourceType": "azurerm_storage_sync_cloud_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageSync/storageSyncServices/syncGroups/cloudEndpoints"
+  },
+  {
+    "resourceType": "azurerm_storage_sync_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageSync/storageSyncServices/syncGroups"
+  },
+  {
+    "resourceType": "azurerm_storage_sync_server_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/clusters"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_function_javascript_uda",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/functions"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_function_javascript_udf",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/functions"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_job",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_job_schedule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/schedule"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_managed_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/clusters/privateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_blob",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_cosmosdb",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_eventhub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_function",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_mssql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_powerbi",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_servicebus_queue",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_servicebus_topic",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_synapse",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_output_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/outputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_reference_input_blob",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_reference_input_mssql",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_stream_input_blob",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_stream_input_eventhub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_stream_input_eventhub_v2",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_stream_analytics_stream_input_iothub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.StreamAnalytics/streamingJobs/inputs"
+  },
+  {
+    "resourceType": "azurerm_subnet",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/subnets"
+  },
+  {
+    "resourceType": "azurerm_subnet_nat_gateway_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/subnets"
+  },
+  {
+    "resourceType": "azurerm_subnet_network_security_group_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/subnets"
+  },
+  {
+    "resourceType": "azurerm_subnet_route_table_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/subnets"
+  },
+  {
+    "resourceType": "azurerm_subnet_service_endpoint_storage_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/serviceEndpointPolicies"
+  },
+  {
+    "resourceType": "azurerm_subscription",
+    "idPattern": "/providers/Microsoft.Subscription/aliases"
+  },
+  {
+    "resourceType": "azurerm_subscription_cost_management_export",
+    "idPattern": "/subscriptions/providers/Microsoft.CostManagement/exports"
+  },
+  {
+    "resourceType": "azurerm_subscription_cost_management_view",
+    "idPattern": "/subscriptions/providers/Microsoft.CostManagement/views"
+  },
+  {
+    "resourceType": "azurerm_subscription_policy_assignment",
+    "idPattern": "/subscriptions/providers/Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "resourceType": "azurerm_subscription_policy_exemption",
+    "idPattern": "/subscriptions/providers/Microsoft.Authorization/policyExemptions"
+  },
+  {
+    "resourceType": "azurerm_subscription_policy_remediation",
+    "idPattern": "/subscriptions/providers/Microsoft.PolicyInsights/remediations"
+  },
+  {
+    "resourceType": "azurerm_subscription_template_deployment",
+    "idPattern": "/subscriptions/providers/Microsoft.Resources/deployments"
+  },
+  {
+    "resourceType": "azurerm_synapse_firewall_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/firewallRules"
+  },
+  {
+    "resourceType": "azurerm_synapse_integration_runtime_azure",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/integrationRuntimes"
+  },
+  {
+    "resourceType": "azurerm_synapse_integration_runtime_self_hosted",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/integrationRuntimes"
+  },
+  {
+    "resourceType": "azurerm_synapse_linked_service",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/linkedServices"
+  },
+  {
+    "resourceType": "azurerm_synapse_managed_private_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints"
+  },
+  {
+    "resourceType": "azurerm_synapse_private_link_hub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/privateLinkHubs"
+  },
+  {
+    "resourceType": "azurerm_synapse_role_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces"
+  },
+  {
+    "resourceType": "azurerm_synapse_spark_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/bigDataPools"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_extended_auditing_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/extendedAuditingSettings"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_security_alert_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/securityAlertPolicies"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_vulnerability_assessment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_vulnerability_assessment_baseline",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments/rules/baselines"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_workload_classifier",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/workloadGroups/workloadClassifiers"
+  },
+  {
+    "resourceType": "azurerm_synapse_sql_pool_workload_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlPools/workloadGroups"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_aad_admin",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/administrators"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_extended_auditing_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/extendedAuditingSettings"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_key",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/keys"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_security_alert_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/securityAlertPolicies"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_sql_aad_admin",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/sqlAdministrators"
+  },
+  {
+    "resourceType": "azurerm_synapse_workspace_vulnerability_assessment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Synapse/workspaces/vulnerabilityAssessments"
+  },
+  {
+    "resourceType": "azurerm_system_center_virtual_machine_manager_availability_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ScVmm/availabilitySets"
+  },
+  {
+    "resourceType": "azurerm_system_center_virtual_machine_manager_cloud",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ScVmm/clouds"
+  },
+  {
+    "resourceType": "azurerm_system_center_virtual_machine_manager_server",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ScVmm/vmmServers"
+  },
+  {
+    "resourceType": "azurerm_system_center_virtual_machine_manager_virtual_machine_template",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ScVmm/virtualMachineTemplates"
+  },
+  {
+    "resourceType": "azurerm_system_center_virtual_machine_manager_virtual_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ScVmm/virtualNetworks"
+  },
+  {
+    "resourceType": "azurerm_tenant_template_deployment",
+    "idPattern": "/providers/Microsoft.Resources/deployments"
+  },
+  {
+    "resourceType": "azurerm_traffic_manager_azure_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/trafficManagerProfiles/AzureEndpoints"
+  },
+  {
+    "resourceType": "azurerm_traffic_manager_external_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/trafficManagerProfiles/ExternalEndpoints"
+  },
+  {
+    "resourceType": "azurerm_traffic_manager_nested_endpoint",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/trafficManagerProfiles/NestedEndpoints"
+  },
+  {
+    "resourceType": "azurerm_traffic_manager_profile",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/trafficManagerProfiles"
+  },
+  {
+    "resourceType": "azurerm_trusted_signing_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.CodeSigning/codeSigningAccounts"
+  },
+  {
+    "resourceType": "azurerm_user_assigned_identity",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.ManagedIdentity/userAssignedIdentities"
+  },
+  {
+    "resourceType": "azurerm_video_indexer_account",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.VideoIndexer/accounts"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_application",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/applicationGroups/applications"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_application_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/applicationGroups"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_host_pool_registration_info",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/hostPools/registrationInfo"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_scaling_plan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/scalingPlans"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_scaling_plan_host_pool_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/scalingPlans"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_workspace",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/workspaces"
+  },
+  {
+    "resourceType": "azurerm_virtual_desktop_workspace_application_group_association",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.DesktopVirtualization/workspaces"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_bgp_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/bgpConnections"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/hubVirtualNetworkConnections"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_ip",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/ipConfigurations"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_route_table",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/hubRouteTables"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_route_table_route",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/hubRouteTables/routes"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_routing_intent",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualHubs/routingIntent"
+  },
+  {
+    "resourceType": "azurerm_virtual_hub_security_partner_provider",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/securityPartnerProviders"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_automanage_configuration_assignment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/providers/Microsoft.AutoManage/configurationProfileAssignments"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_data_disk_attachment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/dataDisks"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/extensions"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_implicit_data_disk_from_source",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/dataDisks"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_packet_capture",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkWatchers/packetCaptures"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_restore_point",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/restorePointCollections/restorePoints"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_restore_point_collection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/restorePointCollections"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_run_command",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines/runCommands"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_scale_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_scale_set_extension",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets/extensions"
+  },
+  {
+    "resourceType": "azurerm_virtual_machine_scale_set_packet_capture",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/networkWatchers/packetCaptures"
+  },
+  {
+    "resourceType": "azurerm_virtual_network",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks"
+  },
+  {
+    "resourceType": "azurerm_virtual_network_dns_servers",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/dnsServers"
+  },
+  {
+    "resourceType": "azurerm_virtual_network_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworkGateways"
+  },
+  {
+    "resourceType": "azurerm_virtual_network_gateway_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/connections"
+  },
+  {
+    "resourceType": "azurerm_virtual_network_gateway_nat_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworkGateways/natRules"
+  },
+  {
+    "resourceType": "azurerm_virtual_network_peering",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+  },
+  {
+    "resourceType": "azurerm_virtual_wan",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/virtualWans"
+  },
+  {
+    "resourceType": "azurerm_vmware_cluster",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AVS/privateClouds/clusters"
+  },
+  {
+    "resourceType": "azurerm_vmware_express_route_authorization",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AVS/privateClouds/authorizations"
+  },
+  {
+    "resourceType": "azurerm_vmware_netapp_volume_attachment",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AVS/privateClouds/clusters/dataStores"
+  },
+  {
+    "resourceType": "azurerm_vmware_private_cloud",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.AVS/privateClouds"
+  },
+  {
+    "resourceType": "azurerm_voice_services_communications_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.VoiceServices/communicationsGateways"
+  },
+  {
+    "resourceType": "azurerm_voice_services_communications_gateway_test_line",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.VoiceServices/communicationsGateways/testLines"
+  },
+  {
+    "resourceType": "azurerm_vpn_gateway",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnGateways"
+  },
+  {
+    "resourceType": "azurerm_vpn_gateway_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnGateways/vpnConnections"
+  },
+  {
+    "resourceType": "azurerm_vpn_gateway_nat_rule",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnGateways/natRules"
+  },
+  {
+    "resourceType": "azurerm_vpn_server_configuration",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnServerConfigurations"
+  },
+  {
+    "resourceType": "azurerm_vpn_server_configuration_policy_group",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnServerConfigurations/configurationPolicyGroups"
+  },
+  {
+    "resourceType": "azurerm_vpn_site",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/vpnSites"
+  },
+  {
+    "resourceType": "azurerm_web_app_active_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_web_app_hybrid_connection",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/hybridConnectionNamespaces/relays"
+  },
+  {
+    "resourceType": "azurerm_web_application_firewall_policy",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Network/applicationGatewayWebApplicationFirewallPolicies"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub_custom_certificate",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub/customCertificates"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub_custom_domain",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub/customDomains"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub_hub",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub/hubs"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub_network_acl",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub"
+  },
+  {
+    "resourceType": "azurerm_web_pubsub_shared_private_link_resource",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.SignalRService/webPubSub/sharedPrivateLinkResources"
+  },
+  {
+    "resourceType": "azurerm_windows_function_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_windows_function_app_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_windows_virtual_machine",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachines"
+  },
+  {
+    "resourceType": "azurerm_windows_virtual_machine_scale_set",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Compute/virtualMachineScaleSets"
+  },
+  {
+    "resourceType": "azurerm_windows_web_app",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites"
+  },
+  {
+    "resourceType": "azurerm_windows_web_app_slot",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Web/sites/slots"
+  },
+  {
+    "resourceType": "azurerm_workloads_sap_discovery_virtual_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Workloads/sapVirtualInstances"
+  },
+  {
+    "resourceType": "azurerm_workloads_sap_single_node_virtual_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Workloads/sapVirtualInstances"
+  },
+  {
+    "resourceType": "azurerm_workloads_sap_three_tier_virtual_instance",
+    "idPattern": "/subscriptions/resourceGroups/providers/Microsoft.Workloads/sapVirtualInstances"
+  },
+  {
+    "resourceType": "template_deployment",
+    "idPattern": ""
+  }
+]
