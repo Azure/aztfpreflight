@@ -38,7 +38,7 @@ func Preflight(ctx context.Context, requestUrl string, payloadJson string) (inte
 	}
 
 	if !strings.EqualFold(armId.Parent.ResourceType.String(), arm.ResourceGroupResourceType.String()) {
-		logrus.Debug("preflight request is not supported for resource type %s", armId.ResourceType.String())
+		logrus.Debugf("preflight request is not supported for resource type %s", armId.ResourceType.String())
 		return nil, nil
 	}
 
