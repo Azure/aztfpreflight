@@ -2,8 +2,6 @@ module github.com/ms-henglu/aztfpreflight
 
 go 1.22.0
 
-toolchain go1.23.3
-
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.17.0
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.8.2

@@ -104,7 +104,8 @@ func (client *TerraformClient) ApplyResource(resourceType string, input interfac
 		return err
 	}
 
-	ctx, _ := context.WithTimeout(context.TODO(), time.Second*5)
+	ctx, cancel := context.WithTimeout(context.TODO(), time.Second*5)
+	defer cancel()
 
 	// disable logging for the provider
 	log.SetOutput(io.Discard)
@@ -117,7 +118,10 @@ func (client *TerraformClient) ApplyResource(resourceType string, input interfac
 		ProviderMeta:   nil,
 	})
 	log.SetOutput(os.Stdout)
-
+	if err != nil {
+		logrus.Debugf("failed to apply resource change: %v", err)
+		return err
+	}
 	errMsg := ""
 	if change != nil && change.Diagnostics != nil {
 		for _, diag := range change.Diagnostics {
