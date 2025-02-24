@@ -3,3 +3,6 @@
 
 
 output
+
+# Added by goreleaser init:
+dist/
