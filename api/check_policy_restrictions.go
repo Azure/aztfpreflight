@@ -76,7 +76,13 @@ func CheckPolicyRestrictions(ctx context.Context, requestUrl string, payloadJson
 	}
 
 	resourceManagerAccount := account.DefaultSharedAccount()
-	CheckPolicyRestrictionsUrl := fmt.Sprintf("/subscriptions/%s/providers/Microsoft.PolicyInsights/checkPolicyRestrictions", resourceManagerAccount.GetSubscriptionId())
+
+	scope := fmt.Sprintf("/subscriptions/%s", resourceManagerAccount.GetSubscriptionId())
+	if armId.Parent.ResourceType.String() == arm.ResourceGroupResourceType.String() {
+		scope = armId.Parent.String()
+	}
+	CheckPolicyRestrictionsUrl := fmt.Sprintf("%s/providers/Microsoft.PolicyInsights/checkPolicyRestrictions", scope)
+
 	resp, err := Execute[CheckPolicyRestrictionsResponseModel](ctx, client, http.MethodPost, CheckPolicyRestrictionsUrl, "2023-03-01", model)
 	if err != nil {
 		return nil, err

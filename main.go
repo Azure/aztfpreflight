@@ -11,11 +11,8 @@ import (
 	"github.com/hashicorp/hc-install/product"
 	"github.com/hashicorp/hc-install/src"
 	"github.com/hashicorp/terraform-exec/tfexec"
-	tfjson "github.com/hashicorp/terraform-json"
 	"github.com/ms-henglu/aztfpreflight/api"
 	"github.com/ms-henglu/aztfpreflight/plan"
-	"github.com/ms-henglu/aztfpreflight/tfclient"
-	"github.com/ms-henglu/aztfpreflight/types"
 	"github.com/ms-henglu/aztfpreflight/utils"
 	"github.com/sirupsen/logrus"
 )
@@ -79,7 +76,7 @@ func main() {
 	}
 
 	logrus.Infof("generating request body...\n")
-	models := ExportAzurePayload(tfplan)
+	models := plan.ExportAzurePayload(tfplan)
 	failedAddrs := make([]string, 0)
 	for _, model := range models {
 		if model.Failed != nil {
@@ -136,62 +133,4 @@ func main() {
 	} else {
 		logrus.Infof("check policy restrictions passed\n")
 	}
-}
-
-func ExportAzurePayload(tfplan *tfjson.Plan) []types.RequestModel {
-	out := make([]types.RequestModel, 0)
-	client := tfclient.NewTerraformClient()
-	for _, change := range tfplan.ResourceChanges {
-		// Skip resources that are not from the azurerm provider
-		if change.ProviderName != "registry.terraform.io/hashicorp/azurerm" {
-			continue
-		}
-
-		// Skip resources that are not being created or updated
-		if !change.Change.Actions.Create() && !change.Change.Actions.Update() {
-			continue
-		}
-
-		address := fmt.Sprintf("%s.%s", change.Type, change.Name)
-		if change.ModuleAddress != "" {
-			address = fmt.Sprintf("%s.%s.%s", change.ModuleAddress, change.Type, change.Name)
-		}
-		configModule := plan.FindConfigModule(tfplan.Config.RootModule, address)
-
-		config := &tfjson.Expression{
-			ExpressionData: &tfjson.ExpressionData{
-				NestedBlocks: []map[string]*tfjson.Expression{
-					configModule.Expressions,
-				},
-			},
-		}
-		valueType := client.ValueType(change.Type)
-
-		plannedValue := plan.PlannedValue(change.Change.After, config, valueType, change.Type)
-
-		err := client.ApplyResource(change.Type, plannedValue)
-		errMsg := ""
-		if err != nil {
-			errMsg = err.Error()
-		}
-
-		models := types.NewRequestModelsFromError(errMsg)
-		if len(models) == 0 {
-			model := types.RequestModel{
-				Address: change.Address,
-				Failed: &types.FailedCase{
-					Detail: errMsg,
-				},
-			}
-			out = append(out, model)
-			continue
-		} else {
-			for index := range models {
-				models[index].Address = change.Address
-			}
-			out = append(out, models...)
-		}
-	}
-
-	return out
 }
