@@ -132,7 +132,7 @@ func (client *TerraformClient) ApplyResource(resourceType string, input interfac
 		}
 	}
 
-	return fmt.Errorf(errMsg)
+	return fmt.Errorf("error applying resource change: %s", errMsg)
 }
 
 func (client *TerraformClient) ValueType(resourceType string) tftypes.Type {
