@@ -1,7 +1,7 @@
 # v0.2.0
 
 BUGFIXES:
-- Fixes the issue that check policy restriction is not applied to the right scope.
+- Fixes the issue that preflight validation is not applied to the right scope, and disable check policy restriction API because it's included in the preflight validation API.
 
 
 # v0.1.0

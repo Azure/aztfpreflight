@@ -111,26 +111,4 @@ func main() {
 	} else {
 		logrus.Infof("preflight check passed\n")
 	}
-
-	logrus.Infof("sending policy request...\n")
-	checkPolicyRestrictionsErrors := make([]error, 0)
-	for _, model := range models {
-		if model.Failed != nil {
-			continue
-		}
-
-		_, err := api.CheckPolicyRestrictions(context.Background(), model.URL, model.Body)
-		if err != nil {
-			checkPolicyRestrictionsErrors = append(checkPolicyRestrictionsErrors, fmt.Errorf("address: %s, error: %w", model.Address, err))
-			continue
-		}
-	}
-	if len(checkPolicyRestrictionsErrors) > 0 {
-		logrus.Infof("check policy restrictions errors: %d\n", len(checkPolicyRestrictionsErrors))
-		for _, err := range checkPolicyRestrictionsErrors {
-			logrus.Errorf("%s\n", err)
-		}
-	} else {
-		logrus.Infof("check policy restrictions passed\n")
-	}
 }
