@@ -3,11 +3,10 @@ package api
 import (
 	"context"
 	"encoding/json"
-	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
-	"github.com/sirupsen/logrus"
 	"net/http"
 	"net/url"
-	"strings"
+
+	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 )
 
 type PreflightRequestModel struct {
@@ -37,11 +36,6 @@ func Preflight(ctx context.Context, requestUrl string, payloadJson string) (inte
 		return nil, err
 	}
 
-	if !strings.EqualFold(armId.Parent.ResourceType.String(), arm.ResourceGroupResourceType.String()) {
-		logrus.Debugf("preflight request is not supported for resource type %s", armId.ResourceType.String())
-		return nil, nil
-	}
-
 	var payloadMap map[string]interface{}
 	if err := json.Unmarshal([]byte(payloadJson), &payloadMap); err != nil {
 		return nil, err
@@ -52,13 +46,20 @@ func Preflight(ctx context.Context, requestUrl string, payloadJson string) (inte
 		location = loc.(string)
 	}
 
+	scopeId := armId.Parent
+	for scopeId.Parent != nil && scopeId.ResourceType.String() != arm.SubscriptionResourceType.String() &&
+		scopeId.ResourceType.String() != arm.ResourceGroupResourceType.String() &&
+		scopeId.ResourceType.String() != arm.TenantResourceType.String() {
+		scopeId = scopeId.Parent
+	}
+
 	payloadMap["apiVersion"] = parsedUrl.Query().Get("api-version")
 	payloadMap["name"] = armId.Name
 	preflightRequestModel := PreflightRequestModel{
 		Provider: armId.ResourceType.Namespace,
 		Type:     armId.ResourceType.Type,
 		Location: location,
-		Scope:    armId.Parent.String(),
+		Scope:    scopeId.String(),
 		Resources: []map[string]interface{}{
 			payloadMap,
 		},
