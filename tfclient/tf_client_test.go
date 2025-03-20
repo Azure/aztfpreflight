@@ -53,5 +53,4 @@ func Test_ApplyResource(t *testing.T) {
 			t.Fatalf("Expected error to contain %q, got %q", tc.expectError, err.Error())
 		}
 	}
-
 }

@@ -58,7 +58,7 @@ func (p AutoRestErrorParser) ParseError(input string) []RequestModel {
 		return nil
 	}
 
-	var result []RequestModel
+	result := make([]RequestModel, 0)
 	for _, match := range matches {
 		var serverError azure.ServiceError
 		err := json.Unmarshal([]byte(match[1]), &serverError)
@@ -99,7 +99,7 @@ func (p AutoRestPollerErrorParser) ParseError(input string) []RequestModel {
 		return nil
 	}
 
-	var result []RequestModel
+	result := make([]RequestModel, 0)
 	for _, match := range matches {
 		var innerError map[string]interface{}
 		err := json.Unmarshal([]byte(match[1]), &innerError)

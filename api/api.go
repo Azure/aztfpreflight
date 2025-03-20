@@ -2,8 +2,6 @@ package api
 
 import (
 	"context"
-	"github.com/ms-henglu/aztfpreflight/utils"
-	"github.com/sirupsen/logrus"
 	"net/http"
 	"strings"
 
@@ -11,6 +9,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/cloud"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/runtime"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+	"github.com/ms-henglu/aztfpreflight/utils"
+	"github.com/sirupsen/logrus"
 )
 
 type Client struct {

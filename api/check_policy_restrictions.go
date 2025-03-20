@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/ms-henglu/aztfpreflight/utils"
 	"net/http"
 	"net/url"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 	"github.com/ms-henglu/aztfpreflight/account"
+	"github.com/ms-henglu/aztfpreflight/utils"
 )
 
 type CheckPolicyRestrictionsRequestModel struct {

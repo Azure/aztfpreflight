@@ -12,8 +12,10 @@ import (
 //go:embed mappings.mini.json
 var m string
 
-var mapping map[string]map[string]string
-var pathPlaceholderMap map[string]interface{}
+var (
+	mapping            map[string]map[string]string
+	pathPlaceholderMap map[string]interface{}
+)
 
 func init() {
 	type Mapping struct {
