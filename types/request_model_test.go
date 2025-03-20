@@ -59,5 +59,4 @@ func Test_NewRequestModelsFromError(t *testing.T) {
 			}
 		}
 	}
-
 }

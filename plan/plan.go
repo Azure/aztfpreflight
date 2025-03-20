@@ -2,12 +2,13 @@ package plan
 
 import (
 	"fmt"
+	"strings"
+
 	tfjson "github.com/hashicorp/terraform-json"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
 	"github.com/ms-henglu/aztfpreflight/placeholder"
 	"github.com/ms-henglu/aztfpreflight/tfclient"
 	"github.com/ms-henglu/aztfpreflight/types"
-	"strings"
 )
 
 func ExportAzurePayload(tfplan *tfjson.Plan) []types.RequestModel {

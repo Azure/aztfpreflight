@@ -11,7 +11,6 @@ import (
 
 //go:embed mappings.mini.json
 var m string
-
 var mapping map[string]map[string]string
 var pathPlaceholderMap map[string]interface{}
 
