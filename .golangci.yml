@@ -1,6 +1,6 @@
 run:
   timeout: 20m
-  go: "1.22"
+  go: "1.24"
   modules-download-mode: vendor
 
 issues:
@@ -41,10 +41,5 @@ linters:
     - whitespace # checks for unnecessary newlines at the start and end of functions, if, for, etc. (
 
 linters-settings:
-  errcheck:
-    exclude-functions:
-  misspell:
-    ignore-words:
   nakedret:
     max-func-lines: 30
-  predeclared:
