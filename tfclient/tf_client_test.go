@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ms-henglu/aztfpreflight/tfclient"
+	"github.com/Azure/aztfpreflight/tfclient"
 )
 
 func Test_NewTerraformClient(t *testing.T) {

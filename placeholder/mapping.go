@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/ms-henglu/aztfpreflight/account"
+	"github.com/Azure/aztfpreflight/account"
 )
 
 //go:embed mappings.mini.json

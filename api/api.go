@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/Azure/aztfpreflight/utils"
 	armruntime "github.com/Azure/azure-sdk-for-go/sdk/azcore/arm/runtime"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/cloud"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/runtime"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-	"github.com/ms-henglu/aztfpreflight/utils"
 	"github.com/sirupsen/logrus"
 )
 

@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"path"
 
+	"github.com/Azure/aztfpreflight/api"
+	"github.com/Azure/aztfpreflight/plan"
+	"github.com/Azure/aztfpreflight/utils"
 	install "github.com/hashicorp/hc-install"
 	"github.com/hashicorp/hc-install/fs"
 	"github.com/hashicorp/hc-install/product"
 	"github.com/hashicorp/hc-install/src"
 	"github.com/hashicorp/terraform-exec/tfexec"
-	"github.com/ms-henglu/aztfpreflight/api"
-	"github.com/ms-henglu/aztfpreflight/plan"
-	"github.com/ms-henglu/aztfpreflight/utils"
 	"github.com/sirupsen/logrus"
 )
 

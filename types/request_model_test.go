@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ms-henglu/aztfpreflight/types"
+	"github.com/Azure/aztfpreflight/types"
 )
 
 func Test_NewRequestModelsFromError(t *testing.T) {

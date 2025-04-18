@@ -1,4 +1,4 @@
-module github.com/ms-henglu/aztfpreflight
+module github.com/Azure/aztfpreflight
 
 go 1.24.0
 

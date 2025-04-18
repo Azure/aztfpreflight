@@ -7,7 +7,7 @@ AZTFPreflight is a tool that helps you run preflight/policy checks for Terraform
 
 #### Install from the binary:
 
-1. Download the binary from [releases](https://github.com/ms-henglu/aztfpreflight/releases).
+1. Download the binary from [releases](https://github.com/Azure/aztfpreflight/releases).
 
 2. It's recommended to add the directory containing the binary to your `PATH`, so that you can run `aztfpreflight` directly.
 
@@ -15,7 +15,7 @@ AZTFPreflight is a tool that helps you run preflight/policy checks for Terraform
 
 1. Install [Go](https://golang.org/doc/install).
 
-2. Run `go install github.com/ms-henglu/aztfpreflight@latest` to install the latest version.
+2. Run `go install github.com/Azure/aztfpreflight@latest` to install the latest version.
 
 3. It's recommended to add `$GOPATH/bin` to your `PATH`, so that you can run `aztfpreflight` directly.
 

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ms-henglu/aztfpreflight/api"
+	"github.com/Azure/aztfpreflight/api"
 )
 
 func Test_Preflight(t *testing.T) {

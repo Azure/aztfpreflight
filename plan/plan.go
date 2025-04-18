@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/Azure/aztfpreflight/placeholder"
+	"github.com/Azure/aztfpreflight/tfclient"
+	"github.com/Azure/aztfpreflight/types"
 	tfjson "github.com/hashicorp/terraform-json"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/ms-henglu/aztfpreflight/placeholder"
-	"github.com/ms-henglu/aztfpreflight/tfclient"
-	"github.com/ms-henglu/aztfpreflight/types"
 )
 
 func ExportAzurePayload(tfplan *tfjson.Plan) []types.RequestModel {

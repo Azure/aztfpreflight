@@ -9,10 +9,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/Azure/aztfpreflight/account"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
 	"github.com/hashicorp/terraform-provider-azurerm/provider"
-	"github.com/ms-henglu/aztfpreflight/account"
 	"github.com/sirupsen/logrus"
 )
 
