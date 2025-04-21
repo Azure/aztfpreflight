@@ -12,7 +12,7 @@ import (
 	"github.com/Azure/aztfpreflight/account"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/hashicorp/terraform-provider-azurerm/provider"
+	"github.com/hashicorp/terraform-provider-azurerm/helpers"
 	"github.com/sirupsen/logrus"
 )
 
@@ -24,7 +24,7 @@ type TerraformClient struct {
 func NewTerraformClient() *TerraformClient {
 	os.Setenv("ARM_PROVIDER_ENHANCED_VALIDATION", "false")
 	os.Setenv("ARM_SKIP_PROVIDER_REGISTRATION", "true")
-	v5Client, err := provider.ProtoV5Provider()
+	v5Client, err := helpers.ProtoV5Provider()
 	if err != nil {
 		logrus.Fatal(err)
 	}
