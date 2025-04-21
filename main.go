@@ -32,7 +32,8 @@ Usage: aztfpreflight [options]
 Options:
 	-i <file>   file path to terraform plan file
 	-v          enable verbose logging
-	-h          show help`
+	-h          show help
+	-j		    json output`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
@@ -40,6 +41,7 @@ func main() {
 	planfilepath := flag.String("i", "", "file path to terraform plan file")
 	verbose := flag.Bool("v", false, "enable verbose logging")
 	help := flag.Bool("h", false, "show help")
+	jsonOutput := flag.Bool("j", false, "json output")
 	flag.Parse()
 
 	if *help {
@@ -56,6 +58,9 @@ func main() {
 
 	if verbose != nil && *verbose {
 		logrus.SetLevel(logrus.DebugLevel)
+	}
+	if jsonOutput != nil && *jsonOutput {
+		logrus.SetFormatter(&logrus.JSONFormatter{})
 	}
 
 	execPath, err := FindTerraform(context.TODO())
@@ -87,6 +92,7 @@ func main() {
 		}
 		logrus.Infof("%s: success\n", model.Address)
 		logrus.Debugf("request model for address: %s, url: %s\nBody: %s\n", model.Address, model.URL, utils.FormatJson(model.Body))
+		logrus.Debugf("request model json: %s\n", utils.ToCompactJson(model))
 	}
 	logrus.Infof("total terraform resources: %d, success: %d, failed: %d\n", len(models), len(models)-len(failedAddrs), len(failedAddrs))
 

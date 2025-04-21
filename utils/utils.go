@@ -19,3 +19,11 @@ func ToJson(input interface{}) string {
 	}
 	return string(data)
 }
+
+func ToCompactJson(input interface{}) string {
+	data, err := json.Marshal(input)
+	if err != nil {
+		return ""
+	}
+	return string(data)
+}
