@@ -30,10 +30,12 @@ func FindTerraform(ctx context.Context) (string, error) {
 const helpMessage = `
 Usage: aztfpreflight [options]
 Options:
-	-i <file>   file path to terraform plan file
-	-v          enable verbose logging
-	-h          show help
-	-j		    json output`
+	-i <file>   		file path to terraform plan file
+	-v          		enable verbose logging
+	-h          		show help
+	-j		    		json output
+	-skip-preflight		skip preflight check
+`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
@@ -42,6 +44,7 @@ func main() {
 	verbose := flag.Bool("v", false, "enable verbose logging")
 	help := flag.Bool("h", false, "show help")
 	jsonOutput := flag.Bool("j", false, "json output")
+	skipPreflight := flag.Bool("skip-preflight", false, "skip preflight check")
 	flag.Parse()
 
 	if *help {
@@ -96,6 +99,10 @@ func main() {
 	}
 	logrus.Infof("total terraform resources: %d, success: %d, failed: %d\n", len(models), len(models)-len(failedAddrs), len(failedAddrs))
 
+	if *skipPreflight {
+		logrus.Infof("skipping preflight check...\n")
+		return
+	}
 	logrus.Infof("sending preflight request...\n")
 	preflightErrors := make([]error, 0)
 	for _, model := range models {
