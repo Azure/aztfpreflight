@@ -21,8 +21,7 @@ Options:
 	-v          		enable verbose logging
 	-h          		show help
 	-j          		json output
-	-skip-preflight		skip preflight check
-`
+	-skip-preflight		skip preflight check`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
