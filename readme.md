@@ -95,6 +95,10 @@ INFO[0006] check policy restrictions passed
 
    The subscription used for the preflight check is the one specified in `ARM_SUBSCRIPTION_ID` environment variable. If this variable is not set, the subscription used for the preflight check is the one specified in `az account show --query id -o tsv`.
 
+2. How many resource types are supported?
+
+   You can find the list of supported resource types in [supported_azurerm_resource_types.md](docs/supported_azurerm_resource_types.md).
+
 ## Credit
 
 We wish to thank HashiCorp for the use of some MPLv2-licensed code from their open source project [terraform-provider-azurerm](https://github.com/hashicorp/terraform-provider-azurerm) and [go-azure-sdk](https://github.com/hashicorp/go-azure-sdk).
