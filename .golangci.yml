@@ -1,5 +1,5 @@
 run:
-  timeout: 20m
+  timeout: 30m
   go: "1.24"
   modules-download-mode: vendor
 
@@ -8,6 +8,7 @@ issues:
   max-same-issues: 0
   exclude-dirs:
     - /submodules/ # Excluding submodules folders as these are externally generated
+    - /vendor/
 
 linters:
   disable-all: true
