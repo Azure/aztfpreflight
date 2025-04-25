@@ -93,7 +93,12 @@ func ExportAzurePayload(tfplan *tfjson.Plan) []types.RequestModel {
 		if err != nil {
 			continue
 		}
-		refValue[fmt.Sprintf("%s.id", request.Address)] = armId.String()
+
+		armResourceId := armId.String()
+		// fix resource ID format for Spring Cloud
+		armResourceId = strings.ReplaceAll(armResourceId, "/Microsoft.AppPlatform/Spring", "/Microsoft.AppPlatform/spring")
+		refValue[fmt.Sprintf("%s.id", request.Address)] = armResourceId
+
 		for j := i + 1; j < len(requests); j++ {
 			requests[j].Config = UpdateConfigWithKnownValues(requests[j].Config, refValue, client.ValueType(requests[j].ResourceType))
 		}
