@@ -23,11 +23,13 @@ AZTFPreflight is a tool that helps you run preflight/policy checks for Terraform
 ```
 Usage: aztfpreflight [options]
 Options:
-        -i <file>   file path to terraform plan file
-        -v          enable verbose logging
-        -h          show help
+        -i <file>               file path to terraform plan file
+        -v                      enable verbose logging
+        -h                      show help
+        -j                      json output
+        -skip-preflight         skip preflight check
 
-version: 0.1.0
+version: 0.3.0
 ```
 
 ## Step-by-step
@@ -95,4 +97,4 @@ INFO[0006] check policy restrictions passed
 
 ## Credit
 
-We wish to thank HashiCorp for the use of some MPLv2-licensed code from their open source project [terraform-provider-azurerm](https://github.com/hashicorp/terraform-provider-azurerm).
+We wish to thank HashiCorp for the use of some MPLv2-licensed code from their open source project [terraform-provider-azurerm](https://github.com/hashicorp/terraform-provider-azurerm) and [go-azure-sdk](https://github.com/hashicorp/go-azure-sdk).

@@ -8,24 +8,11 @@ import (
 
 	"github.com/Azure/aztfpreflight/api"
 	"github.com/Azure/aztfpreflight/plan"
+	"github.com/Azure/aztfpreflight/tfclient"
 	"github.com/Azure/aztfpreflight/utils"
-	install "github.com/hashicorp/hc-install"
-	"github.com/hashicorp/hc-install/fs"
-	"github.com/hashicorp/hc-install/product"
-	"github.com/hashicorp/hc-install/src"
 	"github.com/hashicorp/terraform-exec/tfexec"
 	"github.com/sirupsen/logrus"
 )
-
-// FindTerraform finds the path to the terraform executable.
-func FindTerraform(ctx context.Context) (string, error) {
-	i := install.NewInstaller()
-	return i.Ensure(ctx, []src.Source{
-		&fs.AnyVersion{
-			Product: &product.Terraform,
-		},
-	})
-}
 
 const helpMessage = `
 Usage: aztfpreflight [options]
@@ -33,7 +20,7 @@ Options:
 	-i <file>   		file path to terraform plan file
 	-v          		enable verbose logging
 	-h          		show help
-	-j		    		json output
+	-j          		json output
 	-skip-preflight		skip preflight check
 `
 
@@ -66,7 +53,7 @@ func main() {
 		logrus.SetFormatter(&logrus.JSONFormatter{})
 	}
 
-	execPath, err := FindTerraform(context.TODO())
+	execPath, err := tfclient.FindTerraform(context.TODO())
 	if err != nil {
 		logrus.Fatalf("failed to find terraform executable: %v", err)
 	}
