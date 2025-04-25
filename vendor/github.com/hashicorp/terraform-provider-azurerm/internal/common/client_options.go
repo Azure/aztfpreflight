@@ -4,23 +4,19 @@
 package common
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"io"
-	"log"
 	"net/http"
 	"os"
 	"strings"
 
 	"github.com/Azure/go-autorest/autorest"
-	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/hashicorp/go-azure-helpers/sender"
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
 	"github.com/hashicorp/go-azure-sdk/sdk/client"
 	"github.com/hashicorp/go-azure-sdk/sdk/environments"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/features"
 	"github.com/hashicorp/terraform-provider-azurerm/version"
+	"github.com/ms-henglu/azurerm-interceptor/interceptor"
 )
 
 type Authorizers struct {
@@ -105,73 +101,7 @@ type MockSender struct {
 }
 
 func (receiver MockSender) Do(request *http.Request) (*http.Response, error) {
-	if request.Method == "GET" || request.Method == "HEAD" {
-		return &http.Response{
-			StatusCode: 404,
-			Body:       io.NopCloser(strings.NewReader("")),
-			Header: map[string][]string{
-				"Content-Type": {"application/json"},
-			},
-			Request: request,
-		}, nil
-	}
-	if request.Method == "PUT" || request.Method == "PATCH" || request.Method == "POST" && !strings.Contains(request.URL.String(), "checkNameAvailability") {
-		responseErrorModel := azure.ServiceError{
-			Code:    "InterceptedError",
-			Message: "Intercepted error",
-			InnerError: map[string]interface{}{
-				"url":  request.URL.String(),
-				"body": requestBodyString(request),
-			},
-		}
-
-		data, _ := json.Marshal(responseErrorModel)
-
-		return &http.Response{
-			StatusCode: 400,
-			Body:       io.NopCloser(bytes.NewReader(data)),
-			Header: map[string][]string{
-				"Content-Type":   {"application/json"},
-				"Content-Length": {fmt.Sprintf("%d", len(data))},
-			},
-			ContentLength: int64(len(data)),
-			Request:       request,
-		}, nil
-	}
-	if request.Method == "POST" {
-		if strings.Contains(request.URL.String(), "checkNameAvailability") {
-			return &http.Response{
-				StatusCode: 200,
-				Body:       io.NopCloser(strings.NewReader(`{"nameAvailable":true}`)),
-				Header: map[string][]string{
-					"Content-Type": {"application/json"},
-				},
-				Request: request,
-			}, nil
-		}
-	}
-	return &http.Response{
-		StatusCode: 400,
-		Body:       io.NopCloser(strings.NewReader("")),
-		Header: map[string][]string{
-			"Content-Type": {"application/json"},
-		},
-		Request: request,
-	}, nil
-}
-
-func requestBodyString(req *http.Request) string {
-	if req == nil || req.Body == nil {
-		return ""
-	}
-	body, err := io.ReadAll(req.Body)
-	if err != nil {
-		log.Printf("[ERROR] Failed to read request body: %v", err)
-		body = []byte(err.Error())
-	} else {
-		req.Body = io.NopCloser(bytes.NewReader(body))
-	}
-	return string(body)
+	return interceptor.HandleRequest(request)
 }
 
 func userAgent(userAgent, tfVersion, partnerID string, disableTerraformPartnerID bool) string {

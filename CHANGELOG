@@ -1,3 +1,11 @@
+# v0.3.0
+
+FEATURES:
+- Support `-j` option to output the result in JSON format.
+- Support `-skip-preflight` option to skip preflight validation.
+- Integrate with `github.com/ms-henglu/azurerm-interceptor` to intercept azurerm API calls.
+
+
 # v0.2.0
 
 BUGFIXES:

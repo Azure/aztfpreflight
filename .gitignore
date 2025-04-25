@@ -8,3 +8,6 @@ output
 dist/
 
 .DS_Store
+
+.terraform
+.terraform.lock.hcl

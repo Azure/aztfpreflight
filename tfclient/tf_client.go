@@ -109,6 +109,12 @@ func (client *TerraformClient) ApplyResource(resourceType string, input interfac
 
 	// disable logging for the provider
 	log.SetOutput(io.Discard)
+
+	defer func() {
+		if r := recover(); r != nil {
+			logrus.Debugf("recovered from panic: %v", r)
+		}
+	}()
 	change, err := client.v5Client.ApplyResourceChange(ctx, &tfprotov5.ApplyResourceChangeRequest{
 		TypeName:       resourceType,
 		PriorState:     &priorState,

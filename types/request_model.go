@@ -48,7 +48,7 @@ type AutoRestErrorParser struct {
 
 func NewAutoRestErrorParser() ErrorParser {
 	return AutoRestErrorParser{
-		r: regexp.MustCompile(`unexpected status 400 with response: (.+)`),
+		r: regexp.MustCompile(`unexpected status \d+ with response: (.+)`),
 	}
 }
 
@@ -89,7 +89,7 @@ type AutoRestPollerErrorParser struct {
 
 func NewAutoRestPollerErrorParser() ErrorParser {
 	return AutoRestPollerErrorParser{
-		r: regexp.MustCompile(`Code="InterceptedError" Message="Intercepted error" InnerError=(.+)`),
+		r: regexp.MustCompile(`Code="InterceptedError" Message="InterceptedError" InnerError=(.+)`),
 	}
 }
 

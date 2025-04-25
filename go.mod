@@ -71,6 +71,7 @@ require (
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
+	github.com/ms-henglu/azurerm-interceptor v0.0.0-20250424065430-32d17ffe88f1 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/rickb777/date v1.12.5-0.20200422084442-6300e543c4d9 // indirect
@@ -96,6 +97,7 @@ require (
 )
 
 replace (
+	github.com/Azure/go-autorest/autorest => ./submodules/go-autorest/autorest
 	github.com/hashicorp/go-azure-sdk/sdk => ./submodules/go-azure-sdk/sdk
 	github.com/hashicorp/terraform-provider-azurerm => ./submodules/terraform-provider-azurerm
 )
