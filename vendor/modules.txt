@@ -51,8 +51,8 @@ github.com/Azure/azure-sdk-for-go/sdk/internal/uuid
 # github.com/Azure/go-autorest v14.2.0+incompatible
 ## explicit
 github.com/Azure/go-autorest
-# github.com/Azure/go-autorest/autorest v0.11.30
-## explicit; go 1.15
+# github.com/Azure/go-autorest/autorest v0.11.30 => ./submodules/go-autorest/autorest
+## explicit; go 1.24.1
 github.com/Azure/go-autorest/autorest
 github.com/Azure/go-autorest/autorest/azure
 # github.com/Azure/go-autorest/autorest/adal v0.9.24
@@ -1215,7 +1215,7 @@ github.com/hashicorp/go-azure-sdk/resource-manager/workloads/2024-09-01/sapcentr
 github.com/hashicorp/go-azure-sdk/resource-manager/workloads/2024-09-01/sapdatabaseinstances
 github.com/hashicorp/go-azure-sdk/resource-manager/workloads/2024-09-01/sapvirtualinstances
 # github.com/hashicorp/go-azure-sdk/sdk v0.20250314.1213156 => ./submodules/go-azure-sdk/sdk
-## explicit; go 1.22
+## explicit; go 1.24.1
 github.com/hashicorp/go-azure-sdk/sdk/auth
 github.com/hashicorp/go-azure-sdk/sdk/auth/autorest
 github.com/hashicorp/go-azure-sdk/sdk/claims
@@ -1992,6 +1992,9 @@ github.com/mitchellh/mapstructure
 # github.com/mitchellh/reflectwalk v1.0.2
 ## explicit
 github.com/mitchellh/reflectwalk
+# github.com/ms-henglu/azurerm-interceptor v0.0.0-20250424065430-32d17ffe88f1
+## explicit; go 1.24.1
+github.com/ms-henglu/azurerm-interceptor/interceptor
 # github.com/oklog/run v1.1.0
 ## explicit; go 1.13
 github.com/oklog/run
@@ -2228,5 +2231,6 @@ gopkg.in/yaml.v3
 ## explicit; go 1.19
 software.sslmate.com/src/go-pkcs12
 software.sslmate.com/src/go-pkcs12/internal/rc2
+# github.com/Azure/go-autorest/autorest => ./submodules/go-autorest/autorest
 # github.com/hashicorp/go-azure-sdk/sdk => ./submodules/go-azure-sdk/sdk
 # github.com/hashicorp/terraform-provider-azurerm => ./submodules/terraform-provider-azurerm

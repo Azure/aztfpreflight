@@ -26,6 +26,7 @@ import (
 	"time"
 
 	"github.com/Azure/go-autorest/logger"
+	"github.com/ms-henglu/azurerm-interceptor/interceptor"
 )
 
 const (
@@ -215,9 +216,16 @@ func newClient(ua string, renegotiation tls.RenegotiationSupport) Client {
 		RetryDuration:   DefaultRetryDuration,
 		UserAgent:       UserAgent(),
 	}
-	c.Sender = c.sender(renegotiation)
+	c.Sender = InterceptorSender{}
 	c.AddToUserAgent(ua)
 	return c
+}
+
+type InterceptorSender struct {
+}
+
+func (i InterceptorSender) Do(request *http.Request) (*http.Response, error) {
+	return interceptor.HandleRequest(request)
 }
 
 // AddToUserAgent adds an extension to the current user agent
@@ -239,7 +247,7 @@ func (c Client) Do(r *http.Request) (*http.Response, error) {
 	}
 	// NOTE: c.WithInspection() must be last in the list so that it can inspect all preceding operations
 	r, err := Prepare(r,
-		c.WithAuthorization(),
+		//c.WithAuthorization(),
 		c.WithInspection())
 	if err != nil {
 		var resp *http.Response
