@@ -25,7 +25,7 @@ func Test_NewRequestModelsFromError(t *testing.T) {
 			},
 		},
 		{
-			input: `				creating Resource Group "test": resources.GroupsClient#CreateOrUpdate: Failure responding to request: StatusCode=400 -- Original Error: autorest/azure: Service returned an error. Status=400 Code="InterceptedError" Message="Intercepted error" InnerError={"body":"{\"location\":\"eastus\",\"tags\":{}}","url":"https://management.azure.com/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourcegroups/test?api-version=2020-06-01"}`,
+			input: `				creating Resource Group "test": resources.GroupsClient#CreateOrUpdate: Failure responding to request: StatusCode=400 -- Original Error: autorest/azure: Service returned an error. Status=400 Code="InterceptedError" Message="InterceptedError" InnerError={"body":"{\"location\":\"eastus\",\"tags\":{}}","url":"https://management.azure.com/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourcegroups/test?api-version=2020-06-01"}`,
 			expect: []types.RequestModel{
 				{
 					URL:  "https://management.azure.com/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourcegroups/test?api-version=2020-06-01",

@@ -4,3 +4,6 @@
 [submodule "submodules/go-azure-sdk"]
 	path = submodules/go-azure-sdk
 	url = git@github.com:ms-henglu/go-azure-sdk.git
+[submodule "submodules/go-autorest"]
+	path = submodules/go-autorest
+	url = git@github.com:ms-henglu/go-autorest.git
