@@ -87,7 +87,7 @@ func Test_TopoSortRequests(t *testing.T) {
 }
 
 func Test_ExportAzurePayload(t *testing.T) {
-	_ = os.Setenv("ARM_SUBSCRIPTION_ID", "00000000-0000-0000-0000-000000000000")
+	t.Setenv("ARM_SUBSCRIPTION_ID", "00000000-0000-0000-0000-000000000000")
 	testcases := []struct {
 		PlanFilePath string
 		ModelCount   int
