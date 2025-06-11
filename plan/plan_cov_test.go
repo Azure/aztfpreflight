@@ -103,7 +103,7 @@ func Test_AzureRMResourceCoverage(t *testing.T) {
 	}
 	markdownContent := MarkdownReport(len(tested), len(success), supportedResourceTypes)
 	docOutputPath := path.Join("..", "docs", "supported_azurerm_resource_types.md")
-	err = os.WriteFile(docOutputPath, []byte(markdownContent), 0644)
+	err = os.WriteFile(docOutputPath, []byte(markdownContent), 0o644)
 	if err != nil {
 		t.Fatalf("Failed to write report file: %v", err)
 	}
