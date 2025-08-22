@@ -99,6 +99,43 @@ INFO[0006] check policy restrictions passed
 
    You can find the list of supported resource types in [supported_azurerm_resource_types.md](docs/supported_azurerm_resource_types.md).
 
+
+## Development: updating submodules with intercept branches
+
+This repository includes a helper script to prepare intercept branches across submodules when aligning to a specific azurerm provider tag.
+
+- Script: `scripts/update-submodules.sh`
+- Usage:
+
+  ```bash
+  # from repo root
+  scripts/update-submodules.sh <providerTag>
+
+  # example
+  scripts/update-submodules.sh v4.38.0
+  ```
+
+What it does:
+- terraform-provider-azurerm
+  - Checks out `tags/<providerTag>` and creates/resets branch `<providerTag>-intercept`
+  - Cherry-picks the previous HEAD commit; aborts on conflicts, skips if empty
+  - Pushes to origin with `--force-with-lease`
+- go-azure-sdk
+  - Reads `submodules/terraform-provider-azurerm/go.mod` to detect the required module and version
+  - Checks out `tags/<component>/<version>` (e.g., `sdk/v0.20250728.1144148`)
+  - Creates/resets branch `<component>/<version>-intercept`, cherry-picks previous HEAD, pushes
+- go-autorest
+  - Detects the required go-autorest submodule and version (e.g., `autorest/v0.11.30`)
+  - Performs the same flow: checkout tag, branch `<component>/<version>-intercept`, cherry-pick, push
+\- Finally
+  - Runs `go mod tidy && go mod vendor` in the repository root to normalize module state and vendor dependencies
+
+Notes:
+- The script is idempotent: local branches are reset from tags using `git checkout -B` and remote branches are updated using `--force-with-lease`.
+- If the `upstream` remote isn’t configured for a submodule, the script skips it and still fetches from `origin`.
+- Requires a clean working tree inside each submodule.
+\- Requires Go installed and available on PATH to run `go mod tidy` and `go mod vendor`.
+
 ## Credit
 
 We wish to thank HashiCorp for the use of some MPLv2-licensed code from their open source project [terraform-provider-azurerm](https://github.com/hashicorp/terraform-provider-azurerm) and [go-azure-sdk](https://github.com/hashicorp/go-azure-sdk).

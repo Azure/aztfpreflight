@@ -11,3 +11,4 @@ dist/
 
 .terraform
 .terraform.lock.hcl
+.vscode/settings.json
