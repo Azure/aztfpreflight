@@ -4,7 +4,9 @@ FEATURES:
 - Support `-j` option to output the result in JSON format.
 - Support `-skip-preflight` option to skip preflight validation.
 - Integrate with `github.com/ms-henglu/azurerm-interceptor` to intercept azurerm API calls.
+- Support supplying a bearer token via the environment variable `AZURE_ACCESS_TOKEN`. When present, this token will be used to authenticate Azure Resource Manager API requests. The token is used as a static credential (a conservative 1-hour expiry is applied). If not set, the Azure SDK's `DefaultAzureCredential` chain is used.
 
+- Target azurerm version: v4.41.0
 
 # v0.2.0
 

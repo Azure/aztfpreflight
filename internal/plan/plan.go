@@ -5,9 +5,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/Azure/aztfpreflight/placeholder"
-	"github.com/Azure/aztfpreflight/tfclient"
-	"github.com/Azure/aztfpreflight/types"
+	"github.com/Azure/aztfpreflight/internal/placeholder"
+	"github.com/Azure/aztfpreflight/internal/tfclient"
+	"github.com/Azure/aztfpreflight/internal/types"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 	tfjson "github.com/hashicorp/terraform-json"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"

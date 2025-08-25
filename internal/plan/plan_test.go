@@ -6,8 +6,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/Azure/aztfpreflight/plan"
-	"github.com/Azure/aztfpreflight/tfclient"
+	"github.com/Azure/aztfpreflight/internal/plan"
+	"github.com/Azure/aztfpreflight/internal/tfclient"
 	"github.com/hashicorp/terraform-exec/tfexec"
 )
 
