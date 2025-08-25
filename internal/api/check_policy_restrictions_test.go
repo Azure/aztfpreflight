@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Azure/aztfpreflight/api"
+	"github.com/Azure/aztfpreflight/internal/api"
 )
 
 func Test_CheckPolicyRestrictions(t *testing.T) {

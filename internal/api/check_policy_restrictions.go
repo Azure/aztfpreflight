@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/Azure/aztfpreflight/account"
-	"github.com/Azure/aztfpreflight/utils"
+	"github.com/Azure/aztfpreflight/internal/account"
+	"github.com/Azure/aztfpreflight/internal/utils"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 )
 

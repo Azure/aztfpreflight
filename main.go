@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/Azure/aztfpreflight/api"
-	"github.com/Azure/aztfpreflight/plan"
-	"github.com/Azure/aztfpreflight/tfclient"
-	"github.com/Azure/aztfpreflight/utils"
+	"github.com/Azure/aztfpreflight/internal/api"
+	"github.com/Azure/aztfpreflight/internal/plan"
+	"github.com/Azure/aztfpreflight/internal/tfclient"
+	"github.com/Azure/aztfpreflight/internal/utils"
 	"github.com/hashicorp/terraform-exec/tfexec"
 	"github.com/sirupsen/logrus"
 )

@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Azure/aztfpreflight/plan"
-	"github.com/Azure/aztfpreflight/tfclient"
-	"github.com/Azure/aztfpreflight/types"
+	"github.com/Azure/aztfpreflight/internal/plan"
+	"github.com/Azure/aztfpreflight/internal/tfclient"
+	"github.com/Azure/aztfpreflight/internal/types"
 	"github.com/hashicorp/terraform-exec/tfexec"
 )
 
