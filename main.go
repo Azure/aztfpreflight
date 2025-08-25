@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"path"
+	"sync"
 
 	"github.com/Azure/aztfpreflight/internal/api"
 	"github.com/Azure/aztfpreflight/internal/plan"
@@ -21,7 +22,8 @@ Options:
 	-v          		enable verbose logging
 	-h          		show help
 	-j          		json output
-	-skip-preflight		skip preflight check`
+	-skip-preflight		skip preflight check
+	-c <n>      		max concurrent preflight requests (default 8)`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
@@ -31,6 +33,7 @@ func main() {
 	help := flag.Bool("h", false, "show help")
 	jsonOutput := flag.Bool("j", false, "json output")
 	skipPreflight := flag.Bool("skip-preflight", false, "skip preflight check")
+	preflightConcurrency := flag.Int("c", 8, "max concurrent preflight requests")
 	flag.Parse()
 
 	if *help {
@@ -89,19 +92,32 @@ func main() {
 		logrus.Infof("skipping preflight check...\n")
 		return
 	}
-	logrus.Infof("sending preflight request...\n")
+	if *preflightConcurrency <= 0 {
+        *preflightConcurrency = 1
+    }
+	logrus.Infof("sending preflight requests with concurrency: %d...\n", *preflightConcurrency)
 	preflightErrors := make([]error, 0)
+	var mu sync.Mutex
+	sem := make(chan struct{}, *preflightConcurrency)
+	var wg sync.WaitGroup
 	for _, model := range models {
 		if model.Failed != nil {
 			continue
 		}
-
-		_, err := api.Preflight(context.Background(), model.URL, model.Body)
-		if err != nil {
-			preflightErrors = append(preflightErrors, fmt.Errorf("address: %s, error: %w", model.Address, err))
-			continue
-		}
+		m := model // capture loop variable
+		wg.Add(1)
+		sem <- struct{}{}
+		go func() {
+			defer wg.Done()
+			defer func() { <-sem }()
+			if _, err := api.Preflight(context.Background(), m.URL, m.Body); err != nil {
+				mu.Lock()
+				preflightErrors = append(preflightErrors, fmt.Errorf("address: %s, error: %w", m.Address, err))
+				mu.Unlock()
+			}
+		}()
 	}
+	wg.Wait()
 	if len(preflightErrors) > 0 {
 		logrus.Infof("preflight errors: %d\n", len(preflightErrors))
 		for _, err := range preflightErrors {
