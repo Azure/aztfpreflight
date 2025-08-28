@@ -45,7 +45,7 @@ func PreflightInBatch(ctx context.Context, requests []types.RequestModel, concur
 	preflightRequests := make([]PreflightRequestModel, 0, len(requests))
 	preflightErrors := make([]error, 0)
 	for _, req := range requests {
-		preflightRequest, err := buildPreflightRequestBody(req)
+		preflightRequest, err := BuildPreflightRequestBody(req)
 		if err != nil {
 			preflightErrors = append(preflightErrors, err)
 			continue
@@ -92,10 +92,10 @@ func PreflightInBatch(ctx context.Context, requests []types.RequestModel, concur
 }
 
 func preflightRequestKey(r PreflightRequestModel) string {
-	return strings.Join([]string{r.Provider, r.Type, r.Location, r.Scope}, "|")
+	return strings.Join([]string{r.Provider, r.Type, normalizeLocation(r.Location), r.Scope}, "|")
 }
 
-func buildPreflightRequestBody(request types.RequestModel) (PreflightRequestModel, error) {
+func BuildPreflightRequestBody(request types.RequestModel) (PreflightRequestModel, error) {
 	parsedUrl, err := url.Parse(request.URL)
 	if err != nil {
 		return PreflightRequestModel{}, err

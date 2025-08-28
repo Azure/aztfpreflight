@@ -5,6 +5,7 @@ import (
 	"os"
 	"path"
 	"testing"
+	"strings"
 
 	"github.com/Azure/aztfpreflight/internal/plan"
 	"github.com/Azure/aztfpreflight/internal/tfclient"
@@ -121,10 +122,14 @@ func Test_ExportAzurePayload(t *testing.T) {
 			continue
 		}
 
-		tfplan, err := tf.ShowPlanFile(context.TODO(), planFilePath)
-		if err != nil {
-			t.Fatal(err)
-		}
+	    tfplan, err := tf.ShowPlanFile(context.TODO(), planFilePath)
+	    if err != nil {
+		    // Skip if local Terraform version cannot read the recorded planfile.
+		    if strings.Contains(err.Error(), "plan file was created by Terraform") {
+			    t.Skipf("Skipping due to Terraform version mismatch: %v", err)
+		    }
+		    t.Fatal(err)
+	    }
 
 		models := plan.ExportAzurePayload(tfplan)
 		if len(models) != testcase.ModelCount {
