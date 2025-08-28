@@ -90,7 +90,7 @@ func DefaultSharedClient() (*Client, error) {
 }
 
 func Execute[ResponseT interface{}](ctx context.Context, client *Client, method string, url string, apiVersion string, body interface{}) (*ResponseT, error) {
-	logrus.Debugf("Executing request %s %s\nrequest body: %s", method, url, utils.ToJson(body))
+	logrus.Debugf("Executing request %s %s", method, url)
 	req, err := runtime.NewRequest(ctx, method, runtime.JoinPaths(client.host, url))
 	if err != nil {
 		return nil, err
@@ -111,7 +111,6 @@ func Execute[ResponseT interface{}](ctx context.Context, client *Client, method 
 	if !runtime.HasStatusCode(resp, http.StatusOK, http.StatusCreated, http.StatusAccepted, http.StatusNoContent) {
 		return nil, runtime.NewResponseError(resp)
 	}
-	logrus.Debugf("response status code: %d", resp.StatusCode)
 	responseBody := new(ResponseT)
 	contentType := resp.Header.Get("Content-Type")
 	switch {
@@ -120,8 +119,8 @@ func Execute[ResponseT interface{}](ctx context.Context, client *Client, method 
 			logrus.Errorf("failed to unmarshal response body: %s", err)
 			return nil, err
 		}
-		logrus.Debugf("response body: %s", utils.ToJson(responseBody))
 	default:
 	}
+	logrus.Debugf("Request: Url: %s, Request Body: %+v\n\nResponse status: %d, Response Body: %+v", req.Raw().URL.String(), utils.ToJson(body), resp.StatusCode, utils.ToJson(responseBody))
 	return responseBody, nil
 }
