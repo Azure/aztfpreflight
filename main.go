@@ -9,6 +9,7 @@ import (
 	"github.com/Azure/aztfpreflight/internal/api"
 	"github.com/Azure/aztfpreflight/internal/plan"
 	"github.com/Azure/aztfpreflight/internal/tfclient"
+	"github.com/Azure/aztfpreflight/internal/types"
 	"github.com/Azure/aztfpreflight/internal/utils"
 	"github.com/hashicorp/terraform-exec/tfexec"
 	"github.com/sirupsen/logrus"
@@ -21,7 +22,8 @@ Options:
 	-v          		enable verbose logging
 	-h          		show help
 	-j          		json output
-	-skip-preflight		skip preflight check`
+	-skip-preflight		skip preflight check
+	-c <n>      		max concurrent preflight requests (default 8)`
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
@@ -31,6 +33,7 @@ func main() {
 	help := flag.Bool("h", false, "show help")
 	jsonOutput := flag.Bool("j", false, "json output")
 	skipPreflight := flag.Bool("skip-preflight", false, "skip preflight check")
+	preflightConcurrency := flag.Int("c", 8, "max concurrent preflight requests")
 	flag.Parse()
 
 	if *help {
@@ -71,6 +74,7 @@ func main() {
 
 	logrus.Infof("generating request body...\n")
 	models := plan.ExportAzurePayload(tfplan)
+	modelsToPreflight := make([]types.RequestModel, 0)
 	failedAddrs := make([]string, 0)
 	for _, model := range models {
 		if model.Failed != nil {
@@ -82,6 +86,7 @@ func main() {
 		logrus.Infof("%s: success\n", model.Address)
 		logrus.Debugf("request model for address: %s, url: %s\nBody: %s\n", model.Address, model.URL, utils.FormatJson(model.Body))
 		logrus.Debugf("request model json: %s\n", utils.ToCompactJson(model))
+		modelsToPreflight = append(modelsToPreflight, model)
 	}
 	logrus.Infof("total terraform resources: %d, success: %d, failed: %d\n", len(models), len(models)-len(failedAddrs), len(failedAddrs))
 
@@ -89,19 +94,11 @@ func main() {
 		logrus.Infof("skipping preflight check...\n")
 		return
 	}
-	logrus.Infof("sending preflight request...\n")
-	preflightErrors := make([]error, 0)
-	for _, model := range models {
-		if model.Failed != nil {
-			continue
-		}
-
-		_, err := api.Preflight(context.Background(), model.URL, model.Body)
-		if err != nil {
-			preflightErrors = append(preflightErrors, fmt.Errorf("address: %s, error: %w", model.Address, err))
-			continue
-		}
+	if *preflightConcurrency <= 0 {
+		*preflightConcurrency = 1
 	}
+	logrus.Infof("sending preflight requests with concurrency: %d...\n", *preflightConcurrency)
+	preflightErrors := api.PreflightInBatch(context.TODO(), modelsToPreflight, *preflightConcurrency)
 	if len(preflightErrors) > 0 {
 		logrus.Infof("preflight errors: %d\n", len(preflightErrors))
 		for _, err := range preflightErrors {

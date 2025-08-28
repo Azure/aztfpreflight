@@ -28,8 +28,7 @@ Options:
         -h                      show help
         -j                      json output
         -skip-preflight         skip preflight check
-
-version: 0.3.0
+        -c <n>                  max concurrent preflight requests (default 8)
 ```
 
 ## Step-by-step
@@ -62,7 +61,7 @@ INFO[0001] generating request body...
 INFO[0002] azurerm_resource_group.example: success      
 INFO[0002] azurerm_virtual_network.example: success     
 INFO[0002] total terraform resources: 2, success: 2, failed: 0 
-INFO[0002] sending preflight request...                 
+INFO[0002] sending preflight requests with concurrency: 8...                 
 INFO[0004] preflight errors: 1                          
 ERRO[0004] address: azurerm_virtual_network.example, error: POST https://management.azure.com/providers/Microsoft.Resources/validateResources
 --------------------------------------------------------------------------------

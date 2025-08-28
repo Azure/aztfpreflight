@@ -5,8 +5,12 @@ import (
 	"encoding/json"
 	"net/http"
 	"net/url"
+	"strings"
+	"sync"
 
+	"github.com/Azure/aztfpreflight/internal/types"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
+	"github.com/sirupsen/logrus"
 )
 
 type PreflightRequestModel struct {
@@ -25,20 +29,86 @@ type PropertiesModel struct {
 	ValidatedResources []string `json:"validatedResources"`
 }
 
-func Preflight(ctx context.Context, requestUrl string, payloadJson string) (interface{}, error) {
-	parsedUrl, err := url.Parse(requestUrl)
+func Preflight(ctx context.Context, model PreflightRequestModel) (interface{}, error) {
+	client, err := DefaultSharedClient()
 	if err != nil {
 		return nil, err
+	}
+	resp, err := Execute[PreflightResponseModel](ctx, client, http.MethodPost, "/providers/Microsoft.Resources/validateResources", "2020-10-01", model)
+	if err != nil {
+		return nil, err
+	}
+	return resp, nil
+}
+
+func PreflightInBatch(ctx context.Context, requests []types.RequestModel, concurrency int) []error {
+	preflightRequests := make([]PreflightRequestModel, 0, len(requests))
+	preflightErrors := make([]error, 0)
+	for _, req := range requests {
+		preflightRequest, err := BuildPreflightRequestBody(req)
+		if err != nil {
+			preflightErrors = append(preflightErrors, err)
+			continue
+		}
+		preflightRequests = append(preflightRequests, preflightRequest)
+	}
+
+	// group the requests by provider, type, location, scope
+	groupedRequests := make(map[string]*PreflightRequestModel)
+	for _, r := range preflightRequests {
+		key := preflightRequestKey(r)
+		if existing, ok := groupedRequests[key]; ok {
+			existing.Resources = append(existing.Resources, r.Resources...)
+			groupedRequests[key] = existing
+		} else {
+			groupedRequests[key] = &r
+		}
+	}
+	logrus.Debugf("Grouped %d requests into %d preflight requests", len(preflightRequests), len(groupedRequests))
+
+	sem := make(chan struct{}, concurrency)
+	var mu = &sync.Mutex{}
+	var wg sync.WaitGroup
+	for _, r := range groupedRequests {
+		if r == nil {
+			continue
+		}
+		r := r // capture loop variable
+		wg.Add(1)
+		sem <- struct{}{}
+		go func() {
+			defer wg.Done()
+			defer func() { <-sem }()
+			if _, err := Preflight(ctx, *r); err != nil {
+				mu.Lock()
+				preflightErrors = append(preflightErrors, err)
+				mu.Unlock()
+			}
+		}()
+	}
+
+	wg.Wait()
+	return preflightErrors
+}
+
+func preflightRequestKey(r PreflightRequestModel) string {
+	return strings.Join([]string{r.Provider, r.Type, normalizeLocation(r.Location), r.Scope}, "|")
+}
+
+func BuildPreflightRequestBody(request types.RequestModel) (PreflightRequestModel, error) {
+	parsedUrl, err := url.Parse(request.URL)
+	if err != nil {
+		return PreflightRequestModel{}, err
 	}
 
 	armId, err := arm.ParseResourceID(parsedUrl.Path)
 	if err != nil {
-		return nil, err
+		return PreflightRequestModel{}, err
 	}
 
 	var payloadMap map[string]interface{}
-	if err := json.Unmarshal([]byte(payloadJson), &payloadMap); err != nil {
-		return nil, err
+	if err := json.Unmarshal([]byte(request.Body), &payloadMap); err != nil {
+		return PreflightRequestModel{}, err
 	}
 
 	location := ""
@@ -58,20 +128,15 @@ func Preflight(ctx context.Context, requestUrl string, payloadJson string) (inte
 	preflightRequestModel := PreflightRequestModel{
 		Provider: armId.ResourceType.Namespace,
 		Type:     armId.ResourceType.Type,
-		Location: location,
+		Location: normalizeLocation(location),
 		Scope:    scopeId.String(),
 		Resources: []map[string]interface{}{
 			payloadMap,
 		},
 	}
+	return preflightRequestModel, nil
+}
 
-	client, err := DefaultSharedClient()
-	if err != nil {
-		return nil, err
-	}
-	resp, err := Execute[PreflightResponseModel](ctx, client, http.MethodPost, "/providers/Microsoft.Resources/validateResources", "2020-10-01", preflightRequestModel)
-	if err != nil {
-		return nil, err
-	}
-	return resp, nil
+func normalizeLocation(input string) string {
+	return strings.ReplaceAll(strings.ToLower(input), " ", "")
 }
