@@ -21,6 +21,9 @@ func Test_AzureRMResourceCoverage(t *testing.T) {
 	if dir == "" {
 		t.Skip("Skipping test: AZURERM_EXPORT_DIR is not set")
 	}
+	if subscriptionId := os.Getenv("ARM_SUBSCRIPTION_ID"); subscriptionId == "" {
+		t.Skip("Skipping test: ARM_SUBSCRIPTION_ID is not set")
+	}
 	t.Setenv("ARM_PROVIDER_ENHANCED_VALIDATION", "false")
 	t.Setenv("ARM_SKIP_PROVIDER_REGISTRATION", "true")
 
@@ -102,7 +105,7 @@ func Test_AzureRMResourceCoverage(t *testing.T) {
 		supportedResourceTypes = append(supportedResourceTypes, azurermType)
 	}
 	markdownContent := MarkdownReport(len(tested), len(success), supportedResourceTypes)
-	docOutputPath := path.Join("..", "docs", "supported_azurerm_resource_types.md")
+	docOutputPath := path.Join("..", "..", "docs", "supported_azurerm_resource_types.md")
 	err = os.WriteFile(docOutputPath, []byte(markdownContent), 0o644)
 	if err != nil {
 		t.Fatalf("Failed to write report file: %v", err)
