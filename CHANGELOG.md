@@ -1,3 +1,8 @@
+# v0.4.0
+
+- Update to target azurerm version: v4.64.0
+- Update supported resource types to 1091
+
 # v0.3.0
 
 FEATURES:
